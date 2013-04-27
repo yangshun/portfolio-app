@@ -21,6 +21,10 @@
     UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self
                                                                                  action:@selector(blockDragged:)];
     [self addGestureRecognizer:panGesture];
+//    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self
+//                                                                                 action:@selector(tapped:)];
+//    [self addGestureRecognizer:tapGesture];
+    
     beingDragged = NO;
   }
   return self;
@@ -31,10 +35,26 @@
   if (gesture.state == UIGestureRecognizerStateBegan) {
     beingDragged = YES;
   }
-  if (gesture.state == UIGestureRecognizerStateEnded) {
-    beingDragged = NO;
-  }
+  
   CGPoint newCenter = [gesture locationInView:[self superview]];
+  
+  if (newCenter.x < 185 && newCenter.x > 135 && newCenter.y > 45 && newCenter.y < 95) {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"GlowIconHoverTest"
+                                                        object:[NSNumber numberWithBool:YES]];
+  } else {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"GlowIconHoverTest"
+                                                        object:[NSNumber numberWithBool:NO]];
+  }
+  
+  if (gesture.state == UIGestureRecognizerStateEnded) {
+    NSLog(NSStringFromCGPoint([gesture locationInView:[self superview]]));
+    beingDragged = NO;
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"GlowIconHoverTest"
+                                                        object:[NSNumber numberWithBool:NO]];
+  }
+  
+  
+  
   self.center = CGPointMake(newCenter.x,
                             newCenter.y);
   NSNumber *num = [NSNumber numberWithBool:beingDragged];

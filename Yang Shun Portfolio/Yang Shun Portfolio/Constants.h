@@ -15,7 +15,7 @@
 // Physics Engine Constants
 
 #define kWallWidth 200.0f
-#define kWallFriction 0.0f
+#define kWallFriction 1.0f
 #define kWallRestitution 0.05f
 
 #define kGravityMagnitude 200.0f
@@ -25,7 +25,7 @@
 
 // Blocks Properties
 
-#define kBlockFriction 0.0f
+#define kBlockFriction 1.0f
 #define kBlockRestitution 1.0f
 
 #define kBlockWidth 90.0f

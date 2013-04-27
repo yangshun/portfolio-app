@@ -21,6 +21,8 @@
   NSArray *wallRectArray;
   PhysicsWorld *world;
   IBOutlet UIImageView *nameLogo;
+  IBOutlet UIImageView *viewIcon;
+  IBOutlet UITextView *instructions;
 }
 
 @end
@@ -33,6 +35,8 @@
   
   nameLogo.center = CGPointMake(kIphoneWidth/2,
                                 ([[UIScreen mainScreen] bounds].size.height-kStatusBarThickness)/2);
+  instructions.center = CGPointMake(instructions.center.x,
+                                    nameLogo.center.y + nameLogo.frame.size.height/2 + instructions.frame.size.height/2 - 10);
   timeStep = 1.0f/200.0f;
   
   UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
@@ -56,6 +60,11 @@
   [[NSNotificationCenter defaultCenter] addObserver:self
                                            selector:@selector(removeBlock:)
                                                name:@"ObjectOutOfBounds"
+                                             object:nil];
+  
+  [[NSNotificationCenter defaultCenter] addObserver:self
+                                           selector:@selector(glowIcon:)
+                                               name:@"GlowIconHoverTest"
                                              object:nil];
   
   // add observer to update gravity direction when device orientation changes
@@ -127,7 +136,7 @@
                    wallRectTop, wallRectRight, wallRectBottom, nil];
   viewRectArray = [[NSMutableArray alloc] init];
   blockRectArray = [[NSMutableArray alloc] init];
-  for (int i = 0; i < 6; i++) {
+  for (int i = 0; i < 4; i++) {
     [self createBlock:i];
   }
   // initialize the array of block views, PhysicRect blocks and PhysicRect walls
@@ -146,23 +155,9 @@
   PhysicsShape *blockRect;
   switch (index) {
     case 0: {
-      viewRect = [[ImageBlock alloc] initWithFrame:CGRectMake(100, 300, kBlockWidth, kBlockHeight)];
-      viewRect.backgroundColor = kPinkColor;
-      [self.view addSubview:viewRect];
-      blockRect = [[PhysicsRect alloc] initWithOrigin:CGPointMake(100, 300)
-                                                           andWidth:kBlockWidth
-                                                          andHeight:kBlockHeight
-                                                            andMass:1
-                                                        andRotation:0
-                                                        andFriction:kBlockFriction
-                                                     andRestitution:kBlockRestitution
-                                                            andView:viewRect];
-      
-      }
-      break;
-    case 1: {
       viewRect = [[ImageBlock alloc] initWithFrame:CGRectMake(200, 100, kBlockDiameter, kBlockDiameter)];
       viewRect.backgroundColor = kPinkColor;
+      viewRect.image = [UIImage imageNamed:@"job-icon"];
       viewRect.transform = CGAffineTransformRotate(viewRect.transform, 1.91);
       [viewRect.layer setCornerRadius:kBlockRadius];
       [self.view addSubview:viewRect];
@@ -177,27 +172,11 @@
       
     }
       break;
-      
-    case 2: {
-      // initialize maroon block
-      viewRect = [[ImageBlock alloc] initWithFrame:CGRectMake(80, 50, kBlockHeight, kBlockWidth)];
-      viewRect.backgroundColor = kYellowColor;
-      viewRect.transform = CGAffineTransformRotate(viewRect.transform, 0.755);
-      [self.view addSubview:viewRect];
-      blockRect = [[PhysicsRect alloc] initWithOrigin:CGPointMake(50, 50)
-                                             andWidth:kBlockHeight
-                                            andHeight:kBlockWidth
-                                              andMass:1
-                                          andRotation:0.755
-                                          andFriction:kBlockFriction
-                                       andRestitution:kBlockRestitution
-                                              andView:viewRect];
-      }
-      break;
-    case 3: {
+    case 1: {
       viewRect = [[ImageBlock alloc] initWithFrame:CGRectMake(0, 0, kBlockDiameter, kBlockDiameter)];
       viewRect.backgroundColor = kYellowColor;
       viewRect.transform = CGAffineTransformRotate(viewRect.transform, 2.71);
+      viewRect.image = [UIImage imageNamed:@"education-icon"];
       [viewRect.layer setCornerRadius:kBlockRadius];
       [self.view addSubview:viewRect];
       blockRect = [[PhysicsCircle alloc] initWithOrigin:CGPointMake(0, 0)
@@ -210,29 +189,30 @@
                                                                 andView:viewRect];
       }
       break;
-    case 4: {
-      // initialize maroon block
-      viewRect = [[ImageBlock alloc] initWithFrame:CGRectMake(200, 50, kBlockHeight, kBlockWidth)];
-      viewRect.backgroundColor = kTurqoiseColor;
-      viewRect.transform = CGAffineTransformRotate(viewRect.transform, 0.755);
-      [self.view addSubview:viewRect];
-      blockRect = [[PhysicsRect alloc] initWithOrigin:CGPointMake(200, 50)
-                                             andWidth:kBlockHeight
-                                            andHeight:kBlockWidth
-                                              andMass:1
-                                          andRotation:0.755
-                                          andFriction:kBlockFriction
-                                       andRestitution:kBlockRestitution
-                                              andView:viewRect];
-    }
-      break;
-    case 5: {
+    case 2: {
       viewRect = [[ImageBlock alloc] initWithFrame:CGRectMake(240, 0, kBlockDiameter, kBlockDiameter)];
       viewRect.backgroundColor = kTurqoiseColor;
       viewRect.transform = CGAffineTransformRotate(viewRect.transform, 2.71);
+      viewRect.image = [UIImage imageNamed:@"interests-icon"];
       [viewRect.layer setCornerRadius:kBlockRadius];
       [self.view addSubview:viewRect];
       blockRect = [[PhysicsCircle alloc] initWithOrigin:CGPointMake(240, 0)
+                                               andWidth:kBlockDiameter
+                                              andHeight:kBlockDiameter
+                                                andMass:1
+                                            andRotation:2.71
+                                            andFriction:kBlockFriction
+                                         andRestitution:kBlockRestitution
+                                                andView:viewRect];
+    }
+      break;
+    case 3: {
+      viewRect = [[ImageBlock alloc] initWithFrame:CGRectMake(160, 70, kBlockDiameter, kBlockDiameter)];
+      viewRect.transform = CGAffineTransformRotate(viewRect.transform, 2.71);
+      viewRect.image = [UIImage imageNamed:@"coding-icon"];
+      [viewRect.layer setCornerRadius:kBlockRadius];
+      [self.view addSubview:viewRect];
+      blockRect = [[PhysicsCircle alloc] initWithOrigin:CGPointMake(160, 70)
                                                andWidth:kBlockDiameter
                                               andHeight:kBlockDiameter
                                                 andMass:1
@@ -251,7 +231,55 @@
   [blockRectArray insertObject:blockRect atIndex:index];
   
 }
-
+//case 0: {
+//  viewRect = [[ImageBlock alloc] initWithFrame:CGRectMake(100, 300, kBlockWidth, kBlockHeight)];
+//  viewRect.backgroundColor = kPinkColor;
+//  viewRect.image = [UIImage imageNamed:@"job-label"];
+//  [self.view addSubview:viewRect];
+//  blockRect = [[PhysicsRect alloc] initWithOrigin:CGPointMake(100, 300)
+//                                         andWidth:kBlockWidth
+//                                        andHeight:kBlockHeight
+//                                          andMass:1
+//                                      andRotation:0
+//                                      andFriction:kBlockFriction
+//                                   andRestitution:kBlockRestitution
+//                                          andView:viewRect];
+//  
+//}
+//break;
+//
+//case 2: {
+//  viewRect = [[ImageBlock alloc] initWithFrame:CGRectMake(80, 50, kBlockWidth, kBlockHeight)];
+//  viewRect.backgroundColor = kYellowColor;
+//  viewRect.transform = CGAffineTransformRotate(viewRect.transform, 0.755);
+//  viewRect.image = [UIImage imageNamed:@"education-label"];
+//  [self.view addSubview:viewRect];
+//  blockRect = [[PhysicsRect alloc] initWithOrigin:CGPointMake(50, 50)
+//                                         andWidth:kBlockWidth
+//                                        andHeight:kBlockHeight
+//                                          andMass:1
+//                                      andRotation:0.755
+//                                      andFriction:kBlockFriction
+//                                   andRestitution:kBlockRestitution
+//                                          andView:viewRect];
+//}
+//break;
+//
+//case 4: {
+//  viewRect = [[ImageBlock alloc] initWithFrame:CGRectMake(200, 50, kBlockWidth, kBlockHeight)];
+//  viewRect.backgroundColor = kTurqoiseColor;
+//  viewRect.transform = CGAffineTransformRotate(viewRect.transform, 0.755);
+//  [self.view addSubview:viewRect];
+//  blockRect = [[PhysicsRect alloc] initWithOrigin:CGPointMake(200, 50)
+//                                         andWidth:kBlockWidth
+//                                        andHeight:kBlockHeight
+//                                          andMass:1
+//                                      andRotation:0.755
+//                                      andFriction:kBlockFriction
+//                                   andRestitution:kBlockRestitution
+//                                          andView:viewRect];
+//}
+//break;
 
 - (void)initializeTimer {
   // REQUIRES: PhysicsWorld object, blocks, walls to be created, timestep > 0
@@ -317,6 +345,12 @@
                        }
                      }];
   }
+}
+
+- (void)glowIcon:(NSNotification*)notification {
+  NSNumber *value = [notification object];
+  NSLog(@"glow: %d", [value boolValue]);
+  viewIcon.highlighted = [value boolValue];
 }
 
 - (void)rotateView:(NSNotification*)notification {

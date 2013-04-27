@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D93C318172C646E0039F940 /* job-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D93C316172C646E0039F940 /* job-icon.png */; };
+		6D93C319172C646E0039F940 /* job-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D93C317172C646E0039F940 /* job-icon@2x.png */; };
+		6D93C320172C682A0039F940 /* education-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D93C31A172C682A0039F940 /* education-icon.png */; };
+		6D93C321172C682A0039F940 /* education-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D93C31B172C682A0039F940 /* education-icon@2x.png */; };
+		6D93C322172C682A0039F940 /* education-label.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D93C31C172C682A0039F940 /* education-label.png */; };
+		6D93C323172C682A0039F940 /* education-label@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D93C31D172C682A0039F940 /* education-label@2x.png */; };
+		6D93C324172C682A0039F940 /* job-label.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D93C31E172C682A0039F940 /* job-label.png */; };
+		6D93C325172C682A0039F940 /* job-label@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D93C31F172C682A0039F940 /* job-label@2x.png */; };
+		6D93C32B172C6CF80039F940 /* coding-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D93C327172C6CF80039F940 /* coding-icon.png */; };
+		6D93C32C172C6CF80039F940 /* coding-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D93C328172C6CF80039F940 /* coding-icon@2x.png */; };
+		6D93C32D172C6CF80039F940 /* interests-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D93C329172C6CF80039F940 /* interests-icon.png */; };
+		6D93C32E172C6CF80039F940 /* interests-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D93C32A172C6CF80039F940 /* interests-icon@2x.png */; };
+		6D93C332172C6E720039F940 /* EducationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D93C330172C6E720039F940 /* EducationViewController.m */; };
+		6D93C333172C6E720039F940 /* EducationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D93C331172C6E720039F940 /* EducationViewController.xib */; };
+		6D93C338172C70060039F940 /* view-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D93C334172C70060039F940 /* view-icon.png */; };
+		6D93C339172C70060039F940 /* view-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D93C335172C70060039F940 /* view-icon@2x.png */; };
+		6D93C33A172C70060039F940 /* reset-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D93C336172C70060039F940 /* reset-icon.png */; };
+		6D93C33B172C70060039F940 /* reset-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D93C337172C70060039F940 /* reset-icon@2x.png */; };
+		6D93C33E172C72900039F940 /* view-icon-glow.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D93C33C172C72900039F940 /* view-icon-glow.png */; };
+		6D93C33F172C72900039F940 /* view-icon-glow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D93C33D172C72900039F940 /* view-icon-glow@2x.png */; };
 		6DD1C5AB172B701800683C7C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD1C5AA172B701800683C7C /* UIKit.framework */; };
 		6DD1C5AD172B701800683C7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD1C5AC172B701800683C7C /* Foundation.framework */; };
 		6DD1C5AF172B701800683C7C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD1C5AE172B701800683C7C /* CoreGraphics.framework */; };
@@ -34,6 +54,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D93C316172C646E0039F940 /* job-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "job-icon.png"; sourceTree = "<group>"; };
+		6D93C317172C646E0039F940 /* job-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "job-icon@2x.png"; sourceTree = "<group>"; };
+		6D93C31A172C682A0039F940 /* education-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "education-icon.png"; sourceTree = "<group>"; };
+		6D93C31B172C682A0039F940 /* education-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "education-icon@2x.png"; sourceTree = "<group>"; };
+		6D93C31C172C682A0039F940 /* education-label.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "education-label.png"; sourceTree = "<group>"; };
+		6D93C31D172C682A0039F940 /* education-label@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "education-label@2x.png"; sourceTree = "<group>"; };
+		6D93C31E172C682A0039F940 /* job-label.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "job-label.png"; sourceTree = "<group>"; };
+		6D93C31F172C682A0039F940 /* job-label@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "job-label@2x.png"; sourceTree = "<group>"; };
+		6D93C327172C6CF80039F940 /* coding-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coding-icon.png"; sourceTree = "<group>"; };
+		6D93C328172C6CF80039F940 /* coding-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coding-icon@2x.png"; sourceTree = "<group>"; };
+		6D93C329172C6CF80039F940 /* interests-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "interests-icon.png"; sourceTree = "<group>"; };
+		6D93C32A172C6CF80039F940 /* interests-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "interests-icon@2x.png"; sourceTree = "<group>"; };
+		6D93C32F172C6E720039F940 /* EducationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EducationViewController.h; sourceTree = "<group>"; };
+		6D93C330172C6E720039F940 /* EducationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EducationViewController.m; sourceTree = "<group>"; };
+		6D93C331172C6E720039F940 /* EducationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EducationViewController.xib; sourceTree = "<group>"; };
+		6D93C334172C70060039F940 /* view-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "view-icon.png"; sourceTree = "<group>"; };
+		6D93C335172C70060039F940 /* view-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "view-icon@2x.png"; sourceTree = "<group>"; };
+		6D93C336172C70060039F940 /* reset-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reset-icon.png"; sourceTree = "<group>"; };
+		6D93C337172C70060039F940 /* reset-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reset-icon@2x.png"; sourceTree = "<group>"; };
+		6D93C33C172C72900039F940 /* view-icon-glow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "view-icon-glow.png"; sourceTree = "<group>"; };
+		6D93C33D172C72900039F940 /* view-icon-glow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "view-icon-glow@2x.png"; sourceTree = "<group>"; };
 		6DD1C5A7172B701800683C7C /* Yang Shun Portfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yang Shun Portfolio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DD1C5AA172B701800683C7C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6DD1C5AC172B701800683C7C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -89,6 +130,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D93C326172C68330039F940 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				6D93C33C172C72900039F940 /* view-icon-glow.png */,
+				6D93C33D172C72900039F940 /* view-icon-glow@2x.png */,
+				6D93C334172C70060039F940 /* view-icon.png */,
+				6D93C335172C70060039F940 /* view-icon@2x.png */,
+				6D93C336172C70060039F940 /* reset-icon.png */,
+				6D93C337172C70060039F940 /* reset-icon@2x.png */,
+				6D93C327172C6CF80039F940 /* coding-icon.png */,
+				6D93C328172C6CF80039F940 /* coding-icon@2x.png */,
+				6D93C329172C6CF80039F940 /* interests-icon.png */,
+				6D93C32A172C6CF80039F940 /* interests-icon@2x.png */,
+				6DD1C5F1172C530700683C7C /* name-logo.png */,
+				6DD1C5F2172C530800683C7C /* name-logo@2x.png */,
+				6D93C316172C646E0039F940 /* job-icon.png */,
+				6D93C317172C646E0039F940 /* job-icon@2x.png */,
+				6D93C31A172C682A0039F940 /* education-icon.png */,
+				6D93C31B172C682A0039F940 /* education-icon@2x.png */,
+				6D93C31C172C682A0039F940 /* education-label.png */,
+				6D93C31D172C682A0039F940 /* education-label@2x.png */,
+				6D93C31E172C682A0039F940 /* job-label.png */,
+				6D93C31F172C682A0039F940 /* job-label@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		6DD1C59E172B701800683C7C = {
 			isa = PBXGroup;
 			children = (
@@ -127,13 +195,15 @@
 				6DD1C5BA172B701800683C7C /* AppDelegate.m */,
 				6DD1C5EE172C46A000683C7C /* BlocksFactory.h */,
 				6DD1C5EF172C46A000683C7C /* BlocksFactory.m */,
+				6D93C32F172C6E720039F940 /* EducationViewController.h */,
+				6D93C330172C6E720039F940 /* EducationViewController.m */,
+				6D93C331172C6E720039F940 /* EducationViewController.xib */,
 				6DD1C5C2172B701800683C7C /* ViewController.h */,
 				6DD1C5C3172B701800683C7C /* ViewController.m */,
-				6DD1C5F1172C530700683C7C /* name-logo.png */,
-				6DD1C5F2172C530800683C7C /* name-logo@2x.png */,
 				6DD1C5C5172B701800683C7C /* ViewController.xib */,
 				6DD1C5E3172B815900683C7C /* ImageBlock.h */,
 				6DD1C5E4172B815900683C7C /* ImageBlock.m */,
+				6D93C326172C68330039F940 /* Images */,
 				6DD1C5D9172B713300683C7C /* Physics Engine */,
 				6DD1C5B1172B701800683C7C /* Supporting Files */,
 			);
@@ -233,6 +303,25 @@
 				6DD1C5ED172C44BD00683C7C /* black-linen.png in Resources */,
 				6DD1C5F3172C530900683C7C /* name-logo.png in Resources */,
 				6DD1C5F4172C530A00683C7C /* name-logo@2x.png in Resources */,
+				6D93C318172C646E0039F940 /* job-icon.png in Resources */,
+				6D93C319172C646E0039F940 /* job-icon@2x.png in Resources */,
+				6D93C320172C682A0039F940 /* education-icon.png in Resources */,
+				6D93C321172C682A0039F940 /* education-icon@2x.png in Resources */,
+				6D93C322172C682A0039F940 /* education-label.png in Resources */,
+				6D93C323172C682A0039F940 /* education-label@2x.png in Resources */,
+				6D93C324172C682A0039F940 /* job-label.png in Resources */,
+				6D93C325172C682A0039F940 /* job-label@2x.png in Resources */,
+				6D93C32B172C6CF80039F940 /* coding-icon.png in Resources */,
+				6D93C32C172C6CF80039F940 /* coding-icon@2x.png in Resources */,
+				6D93C32D172C6CF80039F940 /* interests-icon.png in Resources */,
+				6D93C32E172C6CF80039F940 /* interests-icon@2x.png in Resources */,
+				6D93C333172C6E720039F940 /* EducationViewController.xib in Resources */,
+				6D93C338172C70060039F940 /* view-icon.png in Resources */,
+				6D93C339172C70060039F940 /* view-icon@2x.png in Resources */,
+				6D93C33A172C70060039F940 /* reset-icon.png in Resources */,
+				6D93C33B172C70060039F940 /* reset-icon@2x.png in Resources */,
+				6D93C33E172C72900039F940 /* view-icon-glow.png in Resources */,
+				6D93C33F172C72900039F940 /* view-icon-glow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +343,7 @@
 				6DD1C5C4172B701800683C7C /* ViewController.m in Sources */,
 				6DD1C5E5172B815900683C7C /* ImageBlock.m in Sources */,
 				6DD1C5F0172C46A000683C7C /* BlocksFactory.m in Sources */,
+				6D93C332172C6E720039F940 /* EducationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +466,7 @@
 				6DD1C5CC172B701800683C7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
