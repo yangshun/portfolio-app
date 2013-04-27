@@ -40,8 +40,8 @@
 		6DD1C5BD172B701800683C7C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1C5BC172B701800683C7C /* Default.png */; };
 		6DD1C5BF172B701800683C7C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1C5BE172B701800683C7C /* Default@2x.png */; };
 		6DD1C5C1172B701800683C7C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1C5C0172B701800683C7C /* Default-568h@2x.png */; };
-		6DD1C5C4172B701800683C7C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1C5C3172B701800683C7C /* ViewController.m */; };
-		6DD1C5C7172B701800683C7C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1C5C5172B701800683C7C /* ViewController.xib */; };
+		6DD1C5C4172B701800683C7C /* InterestsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1C5C3172B701800683C7C /* InterestsViewController.m */; };
+		6DD1C5C7172B701800683C7C /* InterestsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1C5C5172B701800683C7C /* InterestsViewController.xib */; };
 		6DD1C5DB172B771A00683C7C /* Matrix2D.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1C5CE172B712200683C7C /* Matrix2D.m */; };
 		6DD1C5DC172B771A00683C7C /* PhysicsCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1C5D0172B712200683C7C /* PhysicsCircle.m */; };
 		6DD1C5DD172B771A00683C7C /* PhysicsRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1C5D2172B712200683C7C /* PhysicsRect.m */; };
@@ -49,10 +49,9 @@
 		6DD1C5DF172B771A00683C7C /* PhysicsWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1C5D6172B712200683C7C /* PhysicsWorld.m */; };
 		6DD1C5E0172B771A00683C7C /* Vector2D.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1C5D8172B712200683C7C /* Vector2D.m */; };
 		6DD1C5E2172B7E0500683C7C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD1C5E1172B7E0500683C7C /* QuartzCore.framework */; };
-		6DD1C5E5172B815900683C7C /* ImageBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1C5E4172B815900683C7C /* ImageBlock.m */; };
+		6DD1C5E5172B815900683C7C /* InterestBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1C5E4172B815900683C7C /* InterestBlock.m */; };
 		6DD1C5EC172C44BD00683C7C /* black-linen@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1C5EA172C44BC00683C7C /* black-linen@2X.png */; };
 		6DD1C5ED172C44BD00683C7C /* black-linen.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1C5EB172C44BC00683C7C /* black-linen.png */; };
-		6DD1C5F0172C46A000683C7C /* BlocksFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1C5EF172C46A000683C7C /* BlocksFactory.m */; };
 		6DD1C5F3172C530900683C7C /* name-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1C5F1172C530700683C7C /* name-logo.png */; };
 		6DD1C5F4172C530A00683C7C /* name-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1C5F2172C530800683C7C /* name-logo@2x.png */; };
 /* End PBXBuildFile section */
@@ -97,9 +96,9 @@
 		6DD1C5BC172B701800683C7C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		6DD1C5BE172B701800683C7C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		6DD1C5C0172B701800683C7C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		6DD1C5C2172B701800683C7C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6DD1C5C3172B701800683C7C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		6DD1C5C6172B701800683C7C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		6DD1C5C2172B701800683C7C /* InterestsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterestsViewController.h; sourceTree = "<group>"; };
+		6DD1C5C3172B701800683C7C /* InterestsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterestsViewController.m; sourceTree = "<group>"; };
+		6DD1C5C6172B701800683C7C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/InterestsViewController.xib; sourceTree = "<group>"; };
 		6DD1C5CD172B712200683C7C /* Matrix2D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Matrix2D.h; sourceTree = "<group>"; };
 		6DD1C5CE172B712200683C7C /* Matrix2D.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Matrix2D.m; sourceTree = "<group>"; };
 		6DD1C5CF172B712200683C7C /* PhysicsCircle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhysicsCircle.h; sourceTree = "<group>"; };
@@ -114,12 +113,10 @@
 		6DD1C5D8172B712200683C7C /* Vector2D.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vector2D.m; sourceTree = "<group>"; };
 		6DD1C5DA172B722300683C7C /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		6DD1C5E1172B7E0500683C7C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		6DD1C5E3172B815900683C7C /* ImageBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageBlock.h; sourceTree = "<group>"; };
-		6DD1C5E4172B815900683C7C /* ImageBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageBlock.m; sourceTree = "<group>"; };
+		6DD1C5E3172B815900683C7C /* InterestBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterestBlock.h; sourceTree = "<group>"; };
+		6DD1C5E4172B815900683C7C /* InterestBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterestBlock.m; sourceTree = "<group>"; };
 		6DD1C5EA172C44BC00683C7C /* black-linen@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "black-linen@2X.png"; path = "Yang Shun Portfolio/black-linen@2X.png"; sourceTree = "<group>"; };
 		6DD1C5EB172C44BC00683C7C /* black-linen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "black-linen.png"; path = "Yang Shun Portfolio/black-linen.png"; sourceTree = "<group>"; };
-		6DD1C5EE172C46A000683C7C /* BlocksFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlocksFactory.h; sourceTree = "<group>"; };
-		6DD1C5EF172C46A000683C7C /* BlocksFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlocksFactory.m; sourceTree = "<group>"; };
 		6DD1C5F1172C530700683C7C /* name-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "name-logo.png"; sourceTree = "<group>"; };
 		6DD1C5F2172C530800683C7C /* name-logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "name-logo@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -204,19 +201,17 @@
 				6DD1C5DA172B722300683C7C /* Constants.h */,
 				6DD1C5B9172B701800683C7C /* AppDelegate.h */,
 				6DD1C5BA172B701800683C7C /* AppDelegate.m */,
-				6DD1C5EE172C46A000683C7C /* BlocksFactory.h */,
-				6DD1C5EF172C46A000683C7C /* BlocksFactory.m */,
 				6D93C32F172C6E720039F940 /* EducationViewController.h */,
 				6D93C330172C6E720039F940 /* EducationViewController.m */,
 				6D93C331172C6E720039F940 /* EducationViewController.xib */,
 				6D93C342172C808F0039F940 /* MainViewController.h */,
 				6D93C343172C808F0039F940 /* MainViewController.m */,
 				6D93C344172C808F0039F940 /* MainViewController.xib */,
-				6DD1C5C2172B701800683C7C /* ViewController.h */,
-				6DD1C5C3172B701800683C7C /* ViewController.m */,
-				6DD1C5C5172B701800683C7C /* ViewController.xib */,
-				6DD1C5E3172B815900683C7C /* ImageBlock.h */,
-				6DD1C5E4172B815900683C7C /* ImageBlock.m */,
+				6DD1C5C2172B701800683C7C /* InterestsViewController.h */,
+				6DD1C5C3172B701800683C7C /* InterestsViewController.m */,
+				6DD1C5C5172B701800683C7C /* InterestsViewController.xib */,
+				6DD1C5E3172B815900683C7C /* InterestBlock.h */,
+				6DD1C5E4172B815900683C7C /* InterestBlock.m */,
 				6D93C326172C68330039F940 /* Images */,
 				6DD1C5D9172B713300683C7C /* Physics Engine */,
 				6DD1C5B1172B701800683C7C /* Supporting Files */,
@@ -312,7 +307,7 @@
 				6DD1C5BD172B701800683C7C /* Default.png in Resources */,
 				6DD1C5BF172B701800683C7C /* Default@2x.png in Resources */,
 				6DD1C5C1172B701800683C7C /* Default-568h@2x.png in Resources */,
-				6DD1C5C7172B701800683C7C /* ViewController.xib in Resources */,
+				6DD1C5C7172B701800683C7C /* InterestsViewController.xib in Resources */,
 				6DD1C5EC172C44BD00683C7C /* black-linen@2X.png in Resources */,
 				6DD1C5ED172C44BD00683C7C /* black-linen.png in Resources */,
 				6DD1C5F3172C530900683C7C /* name-logo.png in Resources */,
@@ -357,9 +352,8 @@
 				6DD1C5E0172B771A00683C7C /* Vector2D.m in Sources */,
 				6DD1C5B7172B701800683C7C /* main.m in Sources */,
 				6DD1C5BB172B701800683C7C /* AppDelegate.m in Sources */,
-				6DD1C5C4172B701800683C7C /* ViewController.m in Sources */,
-				6DD1C5E5172B815900683C7C /* ImageBlock.m in Sources */,
-				6DD1C5F0172C46A000683C7C /* BlocksFactory.m in Sources */,
+				6DD1C5C4172B701800683C7C /* InterestsViewController.m in Sources */,
+				6DD1C5E5172B815900683C7C /* InterestBlock.m in Sources */,
 				6D93C332172C6E720039F940 /* EducationViewController.m in Sources */,
 				6D93C345172C808F0039F940 /* MainViewController.m in Sources */,
 			);
@@ -376,12 +370,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		6DD1C5C5172B701800683C7C /* ViewController.xib */ = {
+		6DD1C5C5172B701800683C7C /* InterestsViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6DD1C5C6172B701800683C7C /* en */,
 			);
-			name = ViewController.xib;
+			name = InterestsViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

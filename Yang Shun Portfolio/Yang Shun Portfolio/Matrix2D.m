@@ -16,7 +16,7 @@
 @synthesize col2;
 
 // Constructor for initalizing Vector2D
--(Matrix2D*)initWithVectors:(Vector2D*)c1:(Vector2D*)c2 {
+-(Matrix2D*)initWithVectors:(Vector2D*)c1 andVector:(Vector2D*)c2 {
   // EFFECTS: initializes a Matrix with 2 2D Vectors
   if(self = [super init]){
     col1 = c1;
@@ -28,7 +28,7 @@
 // Static Method for creating a Matrix with 2 Vector2Ds.
 +(Matrix2D*)matrixWithVector:(Vector2D*)v1 andVector:(Vector2D*)v2 {
   // EFFECTS: Returns an autoreleased 2x2 Matrix
-  return [[Matrix2D alloc] initWithVectors:v1 :v2];
+  return [[Matrix2D alloc] initWithVectors:v1 andVector:v2];
 }
 
 // Static Method for creating a Matrix with 4 values.

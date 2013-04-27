@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 Yang Shun Tay. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "InterestsViewController.h"
 #import "Vector2D.h"
 #import "Constants.h"
 #import <QuartzCore/QuartzCore.h>
-#import "ImageBlock.h"
+#import "InterestBlock.h"
 
-@interface ViewController () {
+@interface InterestsViewController () {
   
   NSTimer *timer;
   double timeStep;
@@ -31,7 +31,7 @@
 
 @end
 
-@implementation ViewController
+@implementation InterestsViewController
 
 - (void)viewDidLoad
 {
@@ -152,7 +152,7 @@
 
 - (void)createBlock:(int)index {
   UITextView *textView;
-  ImageBlock *viewRect;
+  InterestBlock *viewRect;
   PhysicsShape *blockRect;
   switch (index) {
     case 0:
@@ -180,7 +180,7 @@
       break;
   }
   blockRect.dt = timeStep;
-  viewRect = [[ImageBlock alloc] initWithFrame:CGRectMake(textView.frame.origin.x+8,
+  viewRect = [[InterestBlock alloc] initWithFrame:CGRectMake(textView.frame.origin.x+8,
                                                           textView.frame.origin.y+8,
                                                           textView.frame.size.width-16,
                                                           textView.frame.size.height-16)];
@@ -208,55 +208,6 @@
   [blockRectArray insertObject:blockRect atIndex:index];
   
 }
-//case 0: {
-//  viewRect = [[ImageBlock alloc] initWithFrame:CGRectMake(100, 300, kBlockWidth, kBlockHeight)];
-//  viewRect.backgroundColor = kPinkColor;
-//  viewRect.image = [UIImage imageNamed:@"job-label"];
-//  [self.view addSubview:viewRect];
-//  blockRect = [[PhysicsRect alloc] initWithOrigin:CGPointMake(100, 300)
-//                                         andWidth:kBlockWidth
-//                                        andHeight:kBlockHeight
-//                                          andMass:1
-//                                      andRotation:0
-//                                      andFriction:kBlockFriction
-//                                   andRestitution:kBlockRestitution
-//                                          andView:viewRect];
-//  
-//}
-//break;
-//
-//case 2: {
-//  viewRect = [[ImageBlock alloc] initWithFrame:CGRectMake(80, 50, kBlockWidth, kBlockHeight)];
-//  viewRect.backgroundColor = kYellowColor;
-//  viewRect.transform = CGAffineTransformRotate(viewRect.transform, 0.755);
-//  viewRect.image = [UIImage imageNamed:@"education-label"];
-//  [self.view addSubview:viewRect];
-//  blockRect = [[PhysicsRect alloc] initWithOrigin:CGPointMake(50, 50)
-//                                         andWidth:kBlockWidth
-//                                        andHeight:kBlockHeight
-//                                          andMass:1
-//                                      andRotation:0.755
-//                                      andFriction:kBlockFriction
-//                                   andRestitution:kBlockRestitution
-//                                          andView:viewRect];
-//}
-//break;
-//
-//case 4: {
-//  viewRect = [[ImageBlock alloc] initWithFrame:CGRectMake(200, 50, kBlockWidth, kBlockHeight)];
-//  viewRect.backgroundColor = kTurqoiseColor;
-//  viewRect.transform = CGAffineTransformRotate(viewRect.transform, 0.755);
-//  [self.view addSubview:viewRect];
-//  blockRect = [[PhysicsRect alloc] initWithOrigin:CGPointMake(200, 50)
-//                                         andWidth:kBlockWidth
-//                                        andHeight:kBlockHeight
-//                                          andMass:1
-//                                      andRotation:0.755
-//                                      andFriction:kBlockFriction
-//                                   andRestitution:kBlockRestitution
-//                                          andView:viewRect];
-//}
-//break;
 
 - (void)initializeTimer {
   // REQUIRES: PhysicsWorld object, blocks, walls to be created, timestep > 0
@@ -290,7 +241,7 @@
 
 - (void)updatePhysicsModel:(NSNotification*)notification {
   NSArray *arr = [notification object];
-  ImageBlock *block = arr[0];
+  InterestBlock *block = arr[0];
   NSNumber *num = arr[1];
   BOOL dragged = [num boolValue];
   NSValue *value = arr[2];

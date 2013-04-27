@@ -11,6 +11,6 @@
 #import "PhysicsCircle.h"
 #import "PhysicsWorld.h"
 
-@interface ViewController : UIViewController<UIAccelerometerDelegate> 
+@interface InterestsViewController : UIViewController<UIAccelerometerDelegate> 
 
 @end

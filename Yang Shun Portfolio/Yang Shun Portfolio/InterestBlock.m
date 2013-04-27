@@ -1,15 +1,15 @@
 //
-//  ImageBlock.m
+//  InterestBlock.m
 //  Yang Shun Portfolio
 //
 //  Created by Yang Shun Tay on 4/26/13.
 //  Copyright (c) 2013 Yang Shun Tay. All rights reserved.
 //
 
-#import "ImageBlock.h"
+#import "InterestBlock.h"
 #import "Constants.h"
 
-@implementation ImageBlock {
+@implementation InterestBlock {
   BOOL beingDragged;
 }
 
@@ -21,9 +21,6 @@
     UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self
                                                                                  action:@selector(blockDragged:)];
     [self addGestureRecognizer:panGesture];
-//    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self
-//                                                                                 action:@selector(tapped:)];
-//    [self addGestureRecognizer:tapGesture];
     
     beingDragged = NO;
   }

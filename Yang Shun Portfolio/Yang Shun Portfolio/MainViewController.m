@@ -7,7 +7,7 @@
 //
 
 #import "MainViewController.h"
-#import "ViewController.h"
+#import "InterestsViewController.h"
 
 @interface MainViewController () {
   IBOutlet UIButton *job;
@@ -66,7 +66,7 @@
 }
 
 - (IBAction)showInterestsPage:(id)sender {
-  ViewController *interestsViewController = [ViewController new];
+  InterestsViewController *interestsViewController = [InterestsViewController new];
   [self presentModalViewController:interestsViewController animated:YES];
 }
 
