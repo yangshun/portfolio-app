@@ -30,8 +30,6 @@
 {
   [super viewDidLoad];
   
-  [self initializeObjects];
-  
   timeStep = 1.0f/200.0f;
   
   UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
@@ -68,7 +66,7 @@
 	accel.delegate = self;
 	accel.updateInterval = timeStep;
   
-  [self initializeTimer];
+  [self resetState:nil];
 }
 
 - (IBAction)resetState:(id)sender {
@@ -81,7 +79,7 @@
                                      andGravity:[self selectGravity:[[UIDevice currentDevice] orientation]]
                                     andTimeStep:timeStep];
   [timer invalidate];
-  [self initializeTimer];
+  [self performSelector:@selector(initializeTimer) withObject:nil afterDelay:0.0f];
 }
 
 - (void)initializeObjects {
@@ -124,71 +122,100 @@
   
   wallRectArray = [[NSArray alloc] initWithObjects: wallRectLeft,
                    wallRectTop, wallRectRight, wallRectBottom, nil];
-  
-  // initialize the blocks (PhysicRect objects) in the view and in the PhysicsWorld
-  // initialize red block
-  ImageBlock *viewRect1 = [[ImageBlock alloc] initWithFrame:CGRectMake(100, 300, 50, 30)];
-  viewRect1.backgroundColor = [UIColor redColor];
-  [self.view addSubview:viewRect1];
-  PhysicsRect *blockRect1 = [[PhysicsRect alloc] initWithOrigin:CGPointMake(100, 300)
-                                                       andWidth:50
-                                                      andHeight:30
-                                                        andMass:1
-                                                    andRotation:0
-                                                    andFriction:kBlockFriction
-                                                 andRestitution:kBlockRestitution
-                                                        andView:viewRect1];
-  
-  // initialize maroon block
-  ImageBlock *viewRect2 = [[ImageBlock alloc] initWithFrame:CGRectMake(50, 50, 25, 75)];
-  viewRect2.backgroundColor = [UIColor colorWithRed:134.0 / 225.0
-                                              green:13.0 / 225.0
-                                               blue:64.0 / 225.0
-                                              alpha:1.0];
-  viewRect2.transform = CGAffineTransformRotate(viewRect2.transform, 0.755);
-  [self.view addSubview:viewRect2];
-  PhysicsRect *blockRect2 = [[PhysicsRect alloc] initWithOrigin:CGPointMake(50, 50)
-                                                       andWidth:25
-                                                      andHeight:75
-                                                        andMass:1
-                                                    andRotation:0.755
-                                                    andFriction:kBlockFriction
-                                                 andRestitution:kBlockRestitution
-                                                        andView:viewRect2];
-  
-  // initialize brown block
-  ImageBlock *viewRect3 = [[ImageBlock alloc] initWithFrame:CGRectMake(200, 100, 80, 80)];
-  viewRect3.backgroundColor = [UIColor brownColor];
-  viewRect3.transform = CGAffineTransformRotate(viewRect3.transform, 1.91);
-  [viewRect3.layer setCornerRadius:40.0f];
-  [self.view addSubview:viewRect3];
-  PhysicsCircle *blockRect3 = [[PhysicsCircle alloc] initWithOrigin:CGPointMake(200, 100)
-                                                           andWidth:80
-                                                          andHeight:80
-                                                            andMass:1
-                                                        andRotation:1.91
-                                                        andFriction:kBlockFriction
-                                                     andRestitution:kBlockRestitution
-                                                            andView:viewRect3];
-  
-  // initialize yellow block
-  ImageBlock *viewRect4 = [[ImageBlock alloc] initWithFrame:CGRectMake(0, 0, 80, 80)];
-  viewRect4.backgroundColor = [UIColor yellowColor];
-  viewRect4.transform = CGAffineTransformRotate(viewRect4.transform, 2.71);
-  [viewRect4.layer setCornerRadius:40.0f];
-  [self.view addSubview:viewRect4];
-  PhysicsCircle *blockRect4 = [[PhysicsCircle alloc] initWithOrigin:CGPointMake(0, 0)
-                                                           andWidth:80
-                                                          andHeight:80
-                                                            andMass:1
-                                                        andRotation:2.71
-                                                        andFriction:kBlockFriction
-                                                     andRestitution:kBlockRestitution
-                                                            andView:viewRect4];
-  
+  viewRectArray = [[NSMutableArray alloc] init];
+  blockRectArray = [[NSMutableArray alloc] init];
+  for (int i = 0; i < 4; i++) {
+    [self createBlock:i];
+  }
   // initialize the array of block views, PhysicRect blocks and PhysicRect walls
-  viewRectArray = [[NSMutableArray alloc] initWithObjects:viewRect1, viewRect2, viewRect3, viewRect4, nil];
-  blockRectArray = [[NSMutableArray alloc] initWithObjects:blockRect1, blockRect2, blockRect3, blockRect4, nil];
+  for (int i = 0; i < [viewRectArray count]; i++) {
+    UIView *view = viewRectArray[i];
+    view.transform = CGAffineTransformMakeScale(0.1f, 0.1f);
+    [UIView animateWithDuration:0.5f
+                     animations:^{
+                       view.transform = CGAffineTransformMakeScale(1.0f, 1.0f);
+                     } completion:^(BOOL finished) {}];
+  }
+}
+
+- (void)createBlock:(int)index {
+  ImageBlock *viewRect;
+  PhysicsShape *blockRect;
+  switch (index) {
+    case 0: {
+      viewRect = [[ImageBlock alloc] initWithFrame:CGRectMake(100, 300, 50, 30)];
+      viewRect.backgroundColor = [UIColor redColor];
+      [self.view addSubview:viewRect];
+      blockRect = [[PhysicsRect alloc] initWithOrigin:CGPointMake(100, 300)
+                                                           andWidth:50
+                                                          andHeight:30
+                                                            andMass:1
+                                                        andRotation:0
+                                                        andFriction:kBlockFriction
+                                                     andRestitution:kBlockRestitution
+                                                            andView:viewRect];
+      
+      }
+      break;
+    case 1: {
+      // initialize maroon block
+      viewRect = [[ImageBlock alloc] initWithFrame:CGRectMake(80, 50, 25, 75)];
+      viewRect.backgroundColor = [UIColor colorWithRed:134.0 / 225.0
+                                                  green:13.0 / 225.0
+                                                   blue:64.0 / 225.0
+                                                  alpha:1.0];
+      viewRect.transform = CGAffineTransformRotate(viewRect.transform, 0.755);
+      [self.view addSubview:viewRect];
+      blockRect = [[PhysicsRect alloc] initWithOrigin:CGPointMake(50, 50)
+                                                           andWidth:25
+                                                          andHeight:75
+                                                            andMass:1
+                                                        andRotation:0.755
+                                                        andFriction:kBlockFriction
+                                                     andRestitution:kBlockRestitution
+                                                            andView:viewRect];
+      }
+      break;
+    case 2: {
+      viewRect = [[ImageBlock alloc] initWithFrame:CGRectMake(200, 100, 80, 80)];
+      viewRect.backgroundColor = [UIColor brownColor];
+      viewRect.transform = CGAffineTransformRotate(viewRect.transform, 1.91);
+      [viewRect.layer setCornerRadius:40.0f];
+      [self.view addSubview:viewRect];
+      blockRect = [[PhysicsCircle alloc] initWithOrigin:CGPointMake(200, 100)
+                                                               andWidth:80
+                                                              andHeight:80
+                                                                andMass:1
+                                                            andRotation:1.91
+                                                            andFriction:kBlockFriction
+                                                         andRestitution:kBlockRestitution
+                                                                andView:viewRect];
+      
+      }
+      break;
+    case 3: {
+      viewRect = [[ImageBlock alloc] initWithFrame:CGRectMake(0, 0, 80, 80)];
+      viewRect.backgroundColor = [UIColor yellowColor];
+      viewRect.transform = CGAffineTransformRotate(viewRect.transform, 2.71);
+      [viewRect.layer setCornerRadius:40.0f];
+      [self.view addSubview:viewRect];
+      blockRect = [[PhysicsCircle alloc] initWithOrigin:CGPointMake(0, 0)
+                                                               andWidth:80
+                                                              andHeight:80
+                                                                andMass:1
+                                                            andRotation:2.71
+                                                            andFriction:kBlockFriction
+                                                         andRestitution:kBlockRestitution
+                                                                andView:viewRect];
+    }
+    default:
+      break;
+  }
+  blockRect.dt = timeStep;
+ 
+  [viewRectArray insertObject:viewRect atIndex:index];
+  [blockRectArray insertObject:blockRect atIndex:index];
+  
 }
 
 
@@ -240,21 +267,27 @@
 }
 
 - (void)removeBlock:(NSNotification*)notification {
-  NSArray *indices = [notification object];
-  
-  NSMutableArray *removingView = [NSMutableArray array];
-  NSMutableArray *removingPhy = [NSMutableArray array];
-  for (NSNumber *num in indices) {
-    ImageBlock *block = viewRectArray[[num intValue]];
-    [removingView addObject:block];
-    [block removeFromSuperview];
-    PhysicsShape *phyObj = world.blockArray[[num intValue]];
-    [removingPhy addObject:phyObj];
+//  NSArray *indices = [notification object];
+//  for (NSNumber *num in indices) {
+//    ImageBlock *block = viewRectArray[[num intValue]];
+//    [block removeFromSuperview];
+//    [self createBlock:[num intValue] andRenewal:YES];
+//  }
+  [timer invalidate];
+  for (int i = 0; i < [viewRectArray count]; i++) {
+    UIView *view = viewRectArray[i];
+    [UIView animateWithDuration:0.5f
+                     animations:^{
+                       view.alpha = 0.0f;
+                     } completion:^(BOOL finished) {
+                       if (finished) {
+                         [view removeFromSuperview];
+                         if (i == [viewRectArray count]-1) {
+                           [self resetState:nil];
+                         }
+                       }
+                     }];
   }
-  
-  [viewRectArray removeObjectsInArray:removingView];
-  [world.blockArray removeObjectsInArray:removingPhy];
-  
 }
 
 - (void)rotateView:(NSNotification*)notification {

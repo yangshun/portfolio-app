@@ -13,7 +13,7 @@
 @synthesize gravity;
 @synthesize timeStep;
 
-- (id)initWithObjects:(NSArray*)newObjects
+- (id)initWithObjects:(NSMutableArray*)newObjects
              andWalls:(NSArray*)walls
            andGravity:(Vector2D*)g 
           andTimeStep:(double)dt {
@@ -23,7 +23,7 @@
   self = [super init];
   
   if (self != nil) {
-    self.blockArray = [NSMutableArray arrayWithArray:newObjects];
+    self.blockArray = newObjects;
     gravity = g;
     timeStep = dt;
 
