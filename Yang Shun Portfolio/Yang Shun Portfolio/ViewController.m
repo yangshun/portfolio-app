@@ -31,6 +31,8 @@
 {
   [super viewDidLoad];
   
+  nameLogo.center = CGPointMake(kIphoneWidth/2,
+                                ([[UIScreen mainScreen] bounds].size.height-kStatusBarThickness)/2);
   timeStep = 1.0f/200.0f;
   
   UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
@@ -112,7 +114,7 @@
                                                            andView:nil];
 
   PhysicsRect *wallRectBottom = [[PhysicsRect alloc] initWithOrigin:
-                                 CGPointMake(0, kIphoneHeight - kStatusBarThickness)
+                                 CGPointMake(0, [[UIScreen mainScreen] bounds].size.height-kStatusBarThickness)
                                                            andWidth:kIphoneWidth
                                                           andHeight:100
                                                             andMass:INFINITY
@@ -350,7 +352,7 @@
   // EFFECTS: changes the gravity according to accelerometer's direction and magnitude
   world.gravity = [Vector2D vectorWith:acceleration.x * kGravityMultiplier
                                      y:-acceleration.y * kGravityMultiplier];
-  
+//  NSLog(@"x: %f, y: %f, z:%f", acceleration.x, acceleration.y, acceleration.z);  
 }
 
 - (void)didReceiveMemoryWarning
