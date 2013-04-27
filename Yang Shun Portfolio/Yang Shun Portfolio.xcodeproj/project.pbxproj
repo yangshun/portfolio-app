@@ -27,6 +27,10 @@
 		6D93C33B172C70060039F940 /* reset-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D93C337172C70060039F940 /* reset-icon@2x.png */; };
 		6D93C33E172C72900039F940 /* view-icon-glow.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D93C33C172C72900039F940 /* view-icon-glow.png */; };
 		6D93C33F172C72900039F940 /* view-icon-glow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D93C33D172C72900039F940 /* view-icon-glow@2x.png */; };
+		6D93C341172C7E3D0039F940 /* thumb-ys@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D93C340172C7E3D0039F940 /* thumb-ys@2x.png */; };
+		6D93C345172C808F0039F940 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D93C343172C808F0039F940 /* MainViewController.m */; };
+		6D93C346172C808F0039F940 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D93C344172C808F0039F940 /* MainViewController.xib */; };
+		6D93C348172C91B40039F940 /* exit-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D93C347172C91B40039F940 /* exit-icon.png */; };
 		6DD1C5AB172B701800683C7C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD1C5AA172B701800683C7C /* UIKit.framework */; };
 		6DD1C5AD172B701800683C7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD1C5AC172B701800683C7C /* Foundation.framework */; };
 		6DD1C5AF172B701800683C7C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD1C5AE172B701800683C7C /* CoreGraphics.framework */; };
@@ -75,6 +79,11 @@
 		6D93C337172C70060039F940 /* reset-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reset-icon@2x.png"; sourceTree = "<group>"; };
 		6D93C33C172C72900039F940 /* view-icon-glow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "view-icon-glow.png"; sourceTree = "<group>"; };
 		6D93C33D172C72900039F940 /* view-icon-glow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "view-icon-glow@2x.png"; sourceTree = "<group>"; };
+		6D93C340172C7E3D0039F940 /* thumb-ys@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumb-ys@2x.png"; sourceTree = "<group>"; };
+		6D93C342172C808F0039F940 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		6D93C343172C808F0039F940 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		6D93C344172C808F0039F940 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		6D93C347172C91B40039F940 /* exit-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exit-icon.png"; sourceTree = "<group>"; };
 		6DD1C5A7172B701800683C7C /* Yang Shun Portfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yang Shun Portfolio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DD1C5AA172B701800683C7C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6DD1C5AC172B701800683C7C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -133,6 +142,8 @@
 		6D93C326172C68330039F940 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				6D93C347172C91B40039F940 /* exit-icon.png */,
+				6D93C340172C7E3D0039F940 /* thumb-ys@2x.png */,
 				6D93C33C172C72900039F940 /* view-icon-glow.png */,
 				6D93C33D172C72900039F940 /* view-icon-glow@2x.png */,
 				6D93C334172C70060039F940 /* view-icon.png */,
@@ -198,6 +209,9 @@
 				6D93C32F172C6E720039F940 /* EducationViewController.h */,
 				6D93C330172C6E720039F940 /* EducationViewController.m */,
 				6D93C331172C6E720039F940 /* EducationViewController.xib */,
+				6D93C342172C808F0039F940 /* MainViewController.h */,
+				6D93C343172C808F0039F940 /* MainViewController.m */,
+				6D93C344172C808F0039F940 /* MainViewController.xib */,
 				6DD1C5C2172B701800683C7C /* ViewController.h */,
 				6DD1C5C3172B701800683C7C /* ViewController.m */,
 				6DD1C5C5172B701800683C7C /* ViewController.xib */,
@@ -322,6 +336,9 @@
 				6D93C33B172C70060039F940 /* reset-icon@2x.png in Resources */,
 				6D93C33E172C72900039F940 /* view-icon-glow.png in Resources */,
 				6D93C33F172C72900039F940 /* view-icon-glow@2x.png in Resources */,
+				6D93C341172C7E3D0039F940 /* thumb-ys@2x.png in Resources */,
+				6D93C346172C808F0039F940 /* MainViewController.xib in Resources */,
+				6D93C348172C91B40039F940 /* exit-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +361,7 @@
 				6DD1C5E5172B815900683C7C /* ImageBlock.m in Sources */,
 				6DD1C5F0172C46A000683C7C /* BlocksFactory.m in Sources */,
 				6D93C332172C6E720039F940 /* EducationViewController.m in Sources */,
+				6D93C345172C808F0039F940 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

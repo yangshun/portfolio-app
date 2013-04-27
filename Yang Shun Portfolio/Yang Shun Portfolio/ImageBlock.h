@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ImageBlock : UIImageView
+@interface ImageBlock : UITextView
 
 - (void)blockDragged:(id)sender;
 

@@ -20,9 +20,13 @@
   NSMutableArray *blockRectArray;
   NSArray *wallRectArray;
   PhysicsWorld *world;
-  IBOutlet UIImageView *nameLogo;
-  IBOutlet UIImageView *viewIcon;
-  IBOutlet UITextView *instructions;
+  IBOutlet UITextView *drawingBox;
+  IBOutlet UITextView *programmingBox;
+  IBOutlet UITextView *interfaceDesignBox;
+  IBOutlet UITextView *graphicDesignBox;
+  IBOutlet UITextView *entrepreneurshipBox;
+  IBOutlet UITextView *calligraphyBox;
+  IBOutlet UITextView *animationBox;
 }
 
 @end
@@ -33,10 +37,6 @@
 {
   [super viewDidLoad];
   
-  nameLogo.center = CGPointMake(kIphoneWidth/2,
-                                ([[UIScreen mainScreen] bounds].size.height-kStatusBarThickness)/2);
-  instructions.center = CGPointMake(instructions.center.x,
-                                    nameLogo.center.y + nameLogo.frame.size.height/2 + instructions.frame.size.height/2 - 10);
   timeStep = 1.0f/200.0f;
   
   UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
@@ -62,11 +62,6 @@
                                                name:@"ObjectOutOfBounds"
                                              object:nil];
   
-  [[NSNotificationCenter defaultCenter] addObserver:self
-                                           selector:@selector(glowIcon:)
-                                               name:@"GlowIconHoverTest"
-                                             object:nil];
-  
   // add observer to update gravity direction when device orientation changes
   [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
   [[NSNotificationCenter defaultCenter] addObserver:self
@@ -77,8 +72,13 @@
   UIAccelerometer *accel = [UIAccelerometer sharedAccelerometer];
 	accel.delegate = self;
 	accel.updateInterval = timeStep;
-  
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+  [super viewDidAppear:animated];
+
   [self resetState:nil];
+  
 }
 
 - (IBAction)resetState:(id)sender {
@@ -136,7 +136,7 @@
                    wallRectTop, wallRectRight, wallRectBottom, nil];
   viewRectArray = [[NSMutableArray alloc] init];
   blockRectArray = [[NSMutableArray alloc] init];
-  for (int i = 0; i < 4; i++) {
+  for (int i = 0; i < 7; i++) {
     [self createBlock:i];
   }
   // initialize the array of block views, PhysicRect blocks and PhysicRect walls
@@ -151,82 +151,59 @@
 }
 
 - (void)createBlock:(int)index {
+  UITextView *textView;
   ImageBlock *viewRect;
   PhysicsShape *blockRect;
   switch (index) {
-    case 0: {
-      viewRect = [[ImageBlock alloc] initWithFrame:CGRectMake(200, 100, kBlockDiameter, kBlockDiameter)];
-      viewRect.backgroundColor = kPinkColor;
-      viewRect.image = [UIImage imageNamed:@"job-icon"];
-      viewRect.transform = CGAffineTransformRotate(viewRect.transform, 1.91);
-      [viewRect.layer setCornerRadius:kBlockRadius];
-      [self.view addSubview:viewRect];
-      blockRect = [[PhysicsCircle alloc] initWithOrigin:CGPointMake(200, 100)
-                                               andWidth:kBlockDiameter
-                                              andHeight:kBlockDiameter
-                                                andMass:1
-                                            andRotation:1.91
-                                            andFriction:kBlockFriction
-                                         andRestitution:kBlockRestitution
-                                                andView:viewRect];
-      
-    }
+    case 0:
+      textView = drawingBox;
       break;
-    case 1: {
-      viewRect = [[ImageBlock alloc] initWithFrame:CGRectMake(0, 0, kBlockDiameter, kBlockDiameter)];
-      viewRect.backgroundColor = kYellowColor;
-      viewRect.transform = CGAffineTransformRotate(viewRect.transform, 2.71);
-      viewRect.image = [UIImage imageNamed:@"education-icon"];
-      [viewRect.layer setCornerRadius:kBlockRadius];
-      [self.view addSubview:viewRect];
-      blockRect = [[PhysicsCircle alloc] initWithOrigin:CGPointMake(0, 0)
-                                                               andWidth:kBlockDiameter
-                                                              andHeight:kBlockDiameter
-                                                                andMass:1
-                                                            andRotation:2.71
-                                                            andFriction:kBlockFriction
-                                                         andRestitution:kBlockRestitution
-                                                                andView:viewRect];
-      }
+    case 1:
+      textView = programmingBox;
       break;
-    case 2: {
-      viewRect = [[ImageBlock alloc] initWithFrame:CGRectMake(240, 0, kBlockDiameter, kBlockDiameter)];
-      viewRect.backgroundColor = kTurqoiseColor;
-      viewRect.transform = CGAffineTransformRotate(viewRect.transform, 2.71);
-      viewRect.image = [UIImage imageNamed:@"interests-icon"];
-      [viewRect.layer setCornerRadius:kBlockRadius];
-      [self.view addSubview:viewRect];
-      blockRect = [[PhysicsCircle alloc] initWithOrigin:CGPointMake(240, 0)
-                                               andWidth:kBlockDiameter
-                                              andHeight:kBlockDiameter
-                                                andMass:1
-                                            andRotation:2.71
-                                            andFriction:kBlockFriction
-                                         andRestitution:kBlockRestitution
-                                                andView:viewRect];
-    }
+    case 2:
+      textView = interfaceDesignBox;
       break;
-    case 3: {
-      viewRect = [[ImageBlock alloc] initWithFrame:CGRectMake(160, 70, kBlockDiameter, kBlockDiameter)];
-      viewRect.transform = CGAffineTransformRotate(viewRect.transform, 2.71);
-      viewRect.image = [UIImage imageNamed:@"coding-icon"];
-      [viewRect.layer setCornerRadius:kBlockRadius];
-      [self.view addSubview:viewRect];
-      blockRect = [[PhysicsCircle alloc] initWithOrigin:CGPointMake(160, 70)
-                                               andWidth:kBlockDiameter
-                                              andHeight:kBlockDiameter
-                                                andMass:1
-                                            andRotation:2.71
-                                            andFriction:kBlockFriction
-                                         andRestitution:kBlockRestitution
-                                                andView:viewRect];
-    }
+    case 3:
+      textView = graphicDesignBox;
+      break;
+    case 4:
+      textView = entrepreneurshipBox;
+      break;
+    case 5:
+      textView = calligraphyBox;
+      break;
+    case 6:
+      textView = animationBox;
       break;
     default:
       break;
   }
   blockRect.dt = timeStep;
- 
+  viewRect = [[ImageBlock alloc] initWithFrame:CGRectMake(textView.frame.origin.x+8,
+                                                          textView.frame.origin.y+8,
+                                                          textView.frame.size.width-16,
+                                                          textView.frame.size.height-16)];
+
+  viewRect.text = textView.text;
+  viewRect.font = textView.font;
+  viewRect.backgroundColor = textView.backgroundColor;
+  viewRect.textColor = textView.textColor;
+  viewRect.textAlignment = textView.textAlignment;
+  viewRect.editable = textView.editable;
+  viewRect.contentInset = UIEdgeInsetsMake(-8,-8,-8,-8);
+  
+  [self.view addSubview:viewRect];
+  
+  blockRect = [[PhysicsRect alloc] initWithOrigin:CGPointMake(textView.frame.origin.x+8, textView.frame.origin.y+8)
+                                           andWidth:textView.frame.size.width-16
+                                          andHeight:textView.frame.size.height-16
+                                            andMass:1
+                                        andRotation:0
+                                        andFriction:kBlockFriction
+                                     andRestitution:kBlockRestitution
+                                            andView:viewRect];
+  
   [viewRectArray insertObject:viewRect atIndex:index];
   [blockRectArray insertObject:blockRect atIndex:index];
   
@@ -347,12 +324,6 @@
   }
 }
 
-- (void)glowIcon:(NSNotification*)notification {
-  NSNumber *value = [notification object];
-  NSLog(@"glow: %d", [value boolValue]);
-  viewIcon.highlighted = [value boolValue];
-}
-
 - (void)rotateView:(NSNotification*)notification {
   // MODIFIES: gravity vector of PhysicsWorld object
   // REQUIRES: device orientation to be changed
@@ -387,6 +358,17 @@
   world.gravity = [Vector2D vectorWith:acceleration.x * kGravityMultiplier
                                      y:-acceleration.y * kGravityMultiplier];
 //  NSLog(@"x: %f, y: %f, z:%f", acceleration.x, acceleration.y, acceleration.z);  
+}
+
+
+- (IBAction)back:(id)sender {
+  [viewRectArray removeAllObjects];
+  viewRectArray = nil;
+  [blockRectArray removeAllObjects];
+  blockRectArray = nil;
+  wallRectArray = nil;
+  world = nil;
+  [self dismissModalViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning
