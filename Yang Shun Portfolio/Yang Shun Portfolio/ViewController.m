@@ -20,6 +20,7 @@
   NSMutableArray *blockRectArray;
   NSArray *wallRectArray;
   PhysicsWorld *world;
+  IBOutlet UIImageView *nameLogo;
 }
 
 @end
@@ -109,7 +110,7 @@
                                                        andFriction:kWallFriction
                                                     andRestitution:kWallRestitution
                                                            andView:nil];
-  
+
   PhysicsRect *wallRectBottom = [[PhysicsRect alloc] initWithOrigin:
                                  CGPointMake(0, kIphoneHeight - kStatusBarThickness)
                                                            andWidth:kIphoneWidth
@@ -124,7 +125,7 @@
                    wallRectTop, wallRectRight, wallRectBottom, nil];
   viewRectArray = [[NSMutableArray alloc] init];
   blockRectArray = [[NSMutableArray alloc] init];
-  for (int i = 0; i < 4; i++) {
+  for (int i = 0; i < 6; i++) {
     [self createBlock:i];
   }
   // initialize the array of block views, PhysicRect blocks and PhysicRect walls
@@ -143,12 +144,12 @@
   PhysicsShape *blockRect;
   switch (index) {
     case 0: {
-      viewRect = [[ImageBlock alloc] initWithFrame:CGRectMake(100, 300, 50, 30)];
-      viewRect.backgroundColor = [UIColor redColor];
+      viewRect = [[ImageBlock alloc] initWithFrame:CGRectMake(100, 300, kBlockWidth, kBlockHeight)];
+      viewRect.backgroundColor = kPinkColor;
       [self.view addSubview:viewRect];
       blockRect = [[PhysicsRect alloc] initWithOrigin:CGPointMake(100, 300)
-                                                           andWidth:50
-                                                          andHeight:30
+                                                           andWidth:kBlockWidth
+                                                          andHeight:kBlockHeight
                                                             andMass:1
                                                         andRotation:0
                                                         andFriction:kBlockFriction
@@ -158,56 +159,87 @@
       }
       break;
     case 1: {
+      viewRect = [[ImageBlock alloc] initWithFrame:CGRectMake(200, 100, kBlockDiameter, kBlockDiameter)];
+      viewRect.backgroundColor = kPinkColor;
+      viewRect.transform = CGAffineTransformRotate(viewRect.transform, 1.91);
+      [viewRect.layer setCornerRadius:kBlockRadius];
+      [self.view addSubview:viewRect];
+      blockRect = [[PhysicsCircle alloc] initWithOrigin:CGPointMake(200, 100)
+                                               andWidth:kBlockDiameter
+                                              andHeight:kBlockDiameter
+                                                andMass:1
+                                            andRotation:1.91
+                                            andFriction:kBlockFriction
+                                         andRestitution:kBlockRestitution
+                                                andView:viewRect];
+      
+    }
+      break;
+      
+    case 2: {
       // initialize maroon block
-      viewRect = [[ImageBlock alloc] initWithFrame:CGRectMake(80, 50, 25, 75)];
-      viewRect.backgroundColor = [UIColor colorWithRed:134.0 / 225.0
-                                                  green:13.0 / 225.0
-                                                   blue:64.0 / 225.0
-                                                  alpha:1.0];
+      viewRect = [[ImageBlock alloc] initWithFrame:CGRectMake(80, 50, kBlockHeight, kBlockWidth)];
+      viewRect.backgroundColor = kYellowColor;
       viewRect.transform = CGAffineTransformRotate(viewRect.transform, 0.755);
       [self.view addSubview:viewRect];
       blockRect = [[PhysicsRect alloc] initWithOrigin:CGPointMake(50, 50)
-                                                           andWidth:25
-                                                          andHeight:75
-                                                            andMass:1
-                                                        andRotation:0.755
-                                                        andFriction:kBlockFriction
-                                                     andRestitution:kBlockRestitution
-                                                            andView:viewRect];
-      }
-      break;
-    case 2: {
-      viewRect = [[ImageBlock alloc] initWithFrame:CGRectMake(200, 100, 80, 80)];
-      viewRect.backgroundColor = [UIColor brownColor];
-      viewRect.transform = CGAffineTransformRotate(viewRect.transform, 1.91);
-      [viewRect.layer setCornerRadius:40.0f];
-      [self.view addSubview:viewRect];
-      blockRect = [[PhysicsCircle alloc] initWithOrigin:CGPointMake(200, 100)
-                                                               andWidth:80
-                                                              andHeight:80
-                                                                andMass:1
-                                                            andRotation:1.91
-                                                            andFriction:kBlockFriction
-                                                         andRestitution:kBlockRestitution
-                                                                andView:viewRect];
-      
+                                             andWidth:kBlockHeight
+                                            andHeight:kBlockWidth
+                                              andMass:1
+                                          andRotation:0.755
+                                          andFriction:kBlockFriction
+                                       andRestitution:kBlockRestitution
+                                              andView:viewRect];
       }
       break;
     case 3: {
-      viewRect = [[ImageBlock alloc] initWithFrame:CGRectMake(0, 0, 80, 80)];
-      viewRect.backgroundColor = [UIColor yellowColor];
+      viewRect = [[ImageBlock alloc] initWithFrame:CGRectMake(0, 0, kBlockDiameter, kBlockDiameter)];
+      viewRect.backgroundColor = kYellowColor;
       viewRect.transform = CGAffineTransformRotate(viewRect.transform, 2.71);
-      [viewRect.layer setCornerRadius:40.0f];
+      [viewRect.layer setCornerRadius:kBlockRadius];
       [self.view addSubview:viewRect];
       blockRect = [[PhysicsCircle alloc] initWithOrigin:CGPointMake(0, 0)
-                                                               andWidth:80
-                                                              andHeight:80
+                                                               andWidth:kBlockDiameter
+                                                              andHeight:kBlockDiameter
                                                                 andMass:1
                                                             andRotation:2.71
                                                             andFriction:kBlockFriction
                                                          andRestitution:kBlockRestitution
                                                                 andView:viewRect];
+      }
+      break;
+    case 4: {
+      // initialize maroon block
+      viewRect = [[ImageBlock alloc] initWithFrame:CGRectMake(200, 50, kBlockHeight, kBlockWidth)];
+      viewRect.backgroundColor = kTurqoiseColor;
+      viewRect.transform = CGAffineTransformRotate(viewRect.transform, 0.755);
+      [self.view addSubview:viewRect];
+      blockRect = [[PhysicsRect alloc] initWithOrigin:CGPointMake(200, 50)
+                                             andWidth:kBlockHeight
+                                            andHeight:kBlockWidth
+                                              andMass:1
+                                          andRotation:0.755
+                                          andFriction:kBlockFriction
+                                       andRestitution:kBlockRestitution
+                                              andView:viewRect];
     }
+      break;
+    case 5: {
+      viewRect = [[ImageBlock alloc] initWithFrame:CGRectMake(240, 0, kBlockDiameter, kBlockDiameter)];
+      viewRect.backgroundColor = kTurqoiseColor;
+      viewRect.transform = CGAffineTransformRotate(viewRect.transform, 2.71);
+      [viewRect.layer setCornerRadius:kBlockRadius];
+      [self.view addSubview:viewRect];
+      blockRect = [[PhysicsCircle alloc] initWithOrigin:CGPointMake(240, 0)
+                                               andWidth:kBlockDiameter
+                                              andHeight:kBlockDiameter
+                                                andMass:1
+                                            andRotation:2.71
+                                            andFriction:kBlockFriction
+                                         andRestitution:kBlockRestitution
+                                                andView:viewRect];
+    }
+      break;
     default:
       break;
   }
@@ -267,12 +299,7 @@
 }
 
 - (void)removeBlock:(NSNotification*)notification {
-//  NSArray *indices = [notification object];
-//  for (NSNumber *num in indices) {
-//    ImageBlock *block = viewRectArray[[num intValue]];
-//    [block removeFromSuperview];
-//    [self createBlock:[num intValue] andRenewal:YES];
-//  }
+
   [timer invalidate];
   for (int i = 0; i < [viewRectArray count]; i++) {
     UIView *view = viewRectArray[i];
@@ -314,7 +341,6 @@
   } else {
     gravity = [Vector2D vectorWith:0 y:kGravityMagnitude];
   }
-  NSLog(@"x: %f, y: %f", gravity.x, gravity.y);
   return gravity;
 }
 
@@ -322,10 +348,9 @@
         didAccelerate:(UIAcceleration *)acceleration {
   // MODIFIES: gravity vector of PhysicsWorld object
   // EFFECTS: changes the gravity according to accelerometer's direction and magnitude
-  //    if (world.accelerometerActivated) {
-  //        world.gravity = [Vector2D vectorWith:acceleration.x * kGravityMultiplier
-  //                                           y:-acceleration.y * kGravityMultiplier];
-  //    }
+  world.gravity = [Vector2D vectorWith:acceleration.x * kGravityMultiplier
+                                     y:-acceleration.y * kGravityMultiplier];
+  
 }
 
 - (void)didReceiveMemoryWarning

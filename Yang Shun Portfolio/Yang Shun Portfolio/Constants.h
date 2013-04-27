@@ -8,20 +8,31 @@
 
 // Device Constants
 
-#define kIphoneWidth 320
-#define kIphoneHeight 568
-#define kStatusBarThickness 20
+#define kIphoneWidth 320.0f
+#define kIphoneHeight 568.0f
+#define kStatusBarThickness 20.0f
 
 // Physics Engine Constants
 
-#define kWallWidth 200
-#define kWallFriction 0.0
-#define kWallRestitution 0.05
+#define kWallWidth 200.0f
+#define kWallFriction 0.0f
+#define kWallRestitution 0.05f
 
-#define kBlockFriction 0.0
-#define kBlockRestitution 1.00
+#define kGravityMagnitude 200.0f
+#define kGravityMultiplier 1000.0f
 
-#define kGravityMagnitude 200
-#define kGravityMultiplier 1000
+#define kDampingFactor 0.1f
 
-#define kDampingFactor 0.1
+// Blocks Properties
+
+#define kBlockFriction 0.0f
+#define kBlockRestitution 1.0f
+
+#define kBlockWidth 90.0f
+#define kBlockHeight 30.0f
+#define kBlockDiameter 60.0f
+#define kBlockRadius (kBlockDiameter/2)
+
+#define kTurqoiseColor [UIColor colorWithRed:11.0 / 225.0 green:141.0 / 225.0 blue:143.0 / 225.0 alpha:1.0]
+#define kYellowColor [UIColor colorWithRed:203.0 / 225.0 green:207.0 / 225.0 blue:68.0 / 225.0 alpha:1.0]
+#define kPinkColor [UIColor colorWithRed:183.0 / 225.0 green:18.0 / 225.0 blue:91.0 / 225.0 alpha:1.0]
