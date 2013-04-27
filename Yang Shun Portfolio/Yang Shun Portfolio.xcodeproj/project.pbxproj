@@ -1,0 +1,361 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6DD1C5AB172B701800683C7C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD1C5AA172B701800683C7C /* UIKit.framework */; };
+		6DD1C5AD172B701800683C7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD1C5AC172B701800683C7C /* Foundation.framework */; };
+		6DD1C5AF172B701800683C7C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD1C5AE172B701800683C7C /* CoreGraphics.framework */; };
+		6DD1C5B5172B701800683C7C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1C5B3172B701800683C7C /* InfoPlist.strings */; };
+		6DD1C5B7172B701800683C7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1C5B6172B701800683C7C /* main.m */; };
+		6DD1C5BB172B701800683C7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1C5BA172B701800683C7C /* AppDelegate.m */; };
+		6DD1C5BD172B701800683C7C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1C5BC172B701800683C7C /* Default.png */; };
+		6DD1C5BF172B701800683C7C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1C5BE172B701800683C7C /* Default@2x.png */; };
+		6DD1C5C1172B701800683C7C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1C5C0172B701800683C7C /* Default-568h@2x.png */; };
+		6DD1C5C4172B701800683C7C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1C5C3172B701800683C7C /* ViewController.m */; };
+		6DD1C5C7172B701800683C7C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1C5C5172B701800683C7C /* ViewController.xib */; };
+		6DD1C5DB172B771A00683C7C /* Matrix2D.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1C5CE172B712200683C7C /* Matrix2D.m */; };
+		6DD1C5DC172B771A00683C7C /* PhysicsCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1C5D0172B712200683C7C /* PhysicsCircle.m */; };
+		6DD1C5DD172B771A00683C7C /* PhysicsRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1C5D2172B712200683C7C /* PhysicsRect.m */; };
+		6DD1C5DE172B771A00683C7C /* PhysicsShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1C5D4172B712200683C7C /* PhysicsShape.m */; };
+		6DD1C5DF172B771A00683C7C /* PhysicsWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1C5D6172B712200683C7C /* PhysicsWorld.m */; };
+		6DD1C5E0172B771A00683C7C /* Vector2D.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1C5D8172B712200683C7C /* Vector2D.m */; };
+		6DD1C5E2172B7E0500683C7C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD1C5E1172B7E0500683C7C /* QuartzCore.framework */; };
+		6DD1C5E5172B815900683C7C /* ImageBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1C5E4172B815900683C7C /* ImageBlock.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6DD1C5A7172B701800683C7C /* Yang Shun Portfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yang Shun Portfolio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DD1C5AA172B701800683C7C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6DD1C5AC172B701800683C7C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6DD1C5AE172B701800683C7C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6DD1C5B2172B701800683C7C /* Yang Shun Portfolio-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Yang Shun Portfolio-Info.plist"; sourceTree = "<group>"; };
+		6DD1C5B4172B701800683C7C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6DD1C5B6172B701800683C7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6DD1C5B8172B701800683C7C /* Yang Shun Portfolio-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Yang Shun Portfolio-Prefix.pch"; sourceTree = "<group>"; };
+		6DD1C5B9172B701800683C7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6DD1C5BA172B701800683C7C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6DD1C5BC172B701800683C7C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		6DD1C5BE172B701800683C7C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		6DD1C5C0172B701800683C7C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6DD1C5C2172B701800683C7C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6DD1C5C3172B701800683C7C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6DD1C5C6172B701800683C7C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		6DD1C5CD172B712200683C7C /* Matrix2D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Matrix2D.h; sourceTree = "<group>"; };
+		6DD1C5CE172B712200683C7C /* Matrix2D.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Matrix2D.m; sourceTree = "<group>"; };
+		6DD1C5CF172B712200683C7C /* PhysicsCircle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhysicsCircle.h; sourceTree = "<group>"; };
+		6DD1C5D0172B712200683C7C /* PhysicsCircle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhysicsCircle.m; sourceTree = "<group>"; };
+		6DD1C5D1172B712200683C7C /* PhysicsRect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhysicsRect.h; sourceTree = "<group>"; };
+		6DD1C5D2172B712200683C7C /* PhysicsRect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhysicsRect.m; sourceTree = "<group>"; };
+		6DD1C5D3172B712200683C7C /* PhysicsShape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhysicsShape.h; sourceTree = "<group>"; };
+		6DD1C5D4172B712200683C7C /* PhysicsShape.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhysicsShape.m; sourceTree = "<group>"; };
+		6DD1C5D5172B712200683C7C /* PhysicsWorld.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhysicsWorld.h; sourceTree = "<group>"; };
+		6DD1C5D6172B712200683C7C /* PhysicsWorld.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhysicsWorld.m; sourceTree = "<group>"; };
+		6DD1C5D7172B712200683C7C /* Vector2D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vector2D.h; sourceTree = "<group>"; };
+		6DD1C5D8172B712200683C7C /* Vector2D.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vector2D.m; sourceTree = "<group>"; };
+		6DD1C5DA172B722300683C7C /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		6DD1C5E1172B7E0500683C7C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6DD1C5E3172B815900683C7C /* ImageBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageBlock.h; sourceTree = "<group>"; };
+		6DD1C5E4172B815900683C7C /* ImageBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageBlock.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DD1C5A4172B701800683C7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DD1C5E2172B7E0500683C7C /* QuartzCore.framework in Frameworks */,
+				6DD1C5AB172B701800683C7C /* UIKit.framework in Frameworks */,
+				6DD1C5AD172B701800683C7C /* Foundation.framework in Frameworks */,
+				6DD1C5AF172B701800683C7C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6DD1C59E172B701800683C7C = {
+			isa = PBXGroup;
+			children = (
+				6DD1C5B0172B701800683C7C /* Yang Shun Portfolio */,
+				6DD1C5A9172B701800683C7C /* Frameworks */,
+				6DD1C5A8172B701800683C7C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6DD1C5A8172B701800683C7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DD1C5A7172B701800683C7C /* Yang Shun Portfolio.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DD1C5A9172B701800683C7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DD1C5E1172B7E0500683C7C /* QuartzCore.framework */,
+				6DD1C5AA172B701800683C7C /* UIKit.framework */,
+				6DD1C5AC172B701800683C7C /* Foundation.framework */,
+				6DD1C5AE172B701800683C7C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6DD1C5B0172B701800683C7C /* Yang Shun Portfolio */ = {
+			isa = PBXGroup;
+			children = (
+				6DD1C5DA172B722300683C7C /* Constants.h */,
+				6DD1C5B9172B701800683C7C /* AppDelegate.h */,
+				6DD1C5BA172B701800683C7C /* AppDelegate.m */,
+				6DD1C5C2172B701800683C7C /* ViewController.h */,
+				6DD1C5C3172B701800683C7C /* ViewController.m */,
+				6DD1C5C5172B701800683C7C /* ViewController.xib */,
+				6DD1C5E3172B815900683C7C /* ImageBlock.h */,
+				6DD1C5E4172B815900683C7C /* ImageBlock.m */,
+				6DD1C5D9172B713300683C7C /* Physics Engine */,
+				6DD1C5B1172B701800683C7C /* Supporting Files */,
+			);
+			path = "Yang Shun Portfolio";
+			sourceTree = "<group>";
+		};
+		6DD1C5B1172B701800683C7C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6DD1C5B2172B701800683C7C /* Yang Shun Portfolio-Info.plist */,
+				6DD1C5B3172B701800683C7C /* InfoPlist.strings */,
+				6DD1C5B6172B701800683C7C /* main.m */,
+				6DD1C5B8172B701800683C7C /* Yang Shun Portfolio-Prefix.pch */,
+				6DD1C5BC172B701800683C7C /* Default.png */,
+				6DD1C5BE172B701800683C7C /* Default@2x.png */,
+				6DD1C5C0172B701800683C7C /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6DD1C5D9172B713300683C7C /* Physics Engine */ = {
+			isa = PBXGroup;
+			children = (
+				6DD1C5CD172B712200683C7C /* Matrix2D.h */,
+				6DD1C5CE172B712200683C7C /* Matrix2D.m */,
+				6DD1C5CF172B712200683C7C /* PhysicsCircle.h */,
+				6DD1C5D0172B712200683C7C /* PhysicsCircle.m */,
+				6DD1C5D1172B712200683C7C /* PhysicsRect.h */,
+				6DD1C5D2172B712200683C7C /* PhysicsRect.m */,
+				6DD1C5D3172B712200683C7C /* PhysicsShape.h */,
+				6DD1C5D4172B712200683C7C /* PhysicsShape.m */,
+				6DD1C5D5172B712200683C7C /* PhysicsWorld.h */,
+				6DD1C5D6172B712200683C7C /* PhysicsWorld.m */,
+				6DD1C5D7172B712200683C7C /* Vector2D.h */,
+				6DD1C5D8172B712200683C7C /* Vector2D.m */,
+			);
+			name = "Physics Engine";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DD1C5A6172B701800683C7C /* Yang Shun Portfolio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DD1C5CA172B701800683C7C /* Build configuration list for PBXNativeTarget "Yang Shun Portfolio" */;
+			buildPhases = (
+				6DD1C5A3172B701800683C7C /* Sources */,
+				6DD1C5A4172B701800683C7C /* Frameworks */,
+				6DD1C5A5172B701800683C7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Yang Shun Portfolio";
+			productName = "Yang Shun Portfolio";
+			productReference = 6DD1C5A7172B701800683C7C /* Yang Shun Portfolio.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DD1C59F172B701800683C7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Yang Shun Tay";
+			};
+			buildConfigurationList = 6DD1C5A2172B701800683C7C /* Build configuration list for PBXProject "Yang Shun Portfolio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6DD1C59E172B701800683C7C;
+			productRefGroup = 6DD1C5A8172B701800683C7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DD1C5A6172B701800683C7C /* Yang Shun Portfolio */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DD1C5A5172B701800683C7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DD1C5B5172B701800683C7C /* InfoPlist.strings in Resources */,
+				6DD1C5BD172B701800683C7C /* Default.png in Resources */,
+				6DD1C5BF172B701800683C7C /* Default@2x.png in Resources */,
+				6DD1C5C1172B701800683C7C /* Default-568h@2x.png in Resources */,
+				6DD1C5C7172B701800683C7C /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DD1C5A3172B701800683C7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DD1C5DB172B771A00683C7C /* Matrix2D.m in Sources */,
+				6DD1C5DC172B771A00683C7C /* PhysicsCircle.m in Sources */,
+				6DD1C5DD172B771A00683C7C /* PhysicsRect.m in Sources */,
+				6DD1C5DE172B771A00683C7C /* PhysicsShape.m in Sources */,
+				6DD1C5DF172B771A00683C7C /* PhysicsWorld.m in Sources */,
+				6DD1C5E0172B771A00683C7C /* Vector2D.m in Sources */,
+				6DD1C5B7172B701800683C7C /* main.m in Sources */,
+				6DD1C5BB172B701800683C7C /* AppDelegate.m in Sources */,
+				6DD1C5C4172B701800683C7C /* ViewController.m in Sources */,
+				6DD1C5E5172B815900683C7C /* ImageBlock.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6DD1C5B3172B701800683C7C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DD1C5B4172B701800683C7C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6DD1C5C5172B701800683C7C /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DD1C5C6172B701800683C7C /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6DD1C5C8172B701800683C7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6DD1C5C9172B701800683C7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DD1C5CB172B701800683C7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Yang Shun Portfolio/Yang Shun Portfolio-Prefix.pch";
+				INFOPLIST_FILE = "Yang Shun Portfolio/Yang Shun Portfolio-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6DD1C5CC172B701800683C7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Yang Shun Portfolio/Yang Shun Portfolio-Prefix.pch";
+				INFOPLIST_FILE = "Yang Shun Portfolio/Yang Shun Portfolio-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DD1C5A2172B701800683C7C /* Build configuration list for PBXProject "Yang Shun Portfolio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DD1C5C8172B701800683C7C /* Debug */,
+				6DD1C5C9172B701800683C7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DD1C5CA172B701800683C7C /* Build configuration list for PBXNativeTarget "Yang Shun Portfolio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DD1C5CB172B701800683C7C /* Debug */,
+				6DD1C5CC172B701800683C7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DD1C59F172B701800683C7C /* Project object */;
+}
