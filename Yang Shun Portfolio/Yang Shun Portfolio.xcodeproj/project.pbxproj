@@ -81,6 +81,8 @@
 		6DEA68FE1732BF7E00F57FFF /* nus-logo-sq.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA68FB1732BF7E00F57FFF /* nus-logo-sq.png */; };
 		6DEA68FF1732BF7E00F57FFF /* feiyue-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA68FC1732BF7E00F57FFF /* feiyue-logo.png */; };
 		6DEA69001732BF7E00F57FFF /* easilydo-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA68FD1732BF7E00F57FFF /* easilydo-icon.png */; };
+		6DEA69021732C3F200F57FFF /* icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA69011732C3F100F57FFF /* icon-57.png */; };
+		6DEA69041732C3F800F57FFF /* icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA69031732C3F800F57FFF /* icon-114.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -179,6 +181,8 @@
 		6DEA68FB1732BF7E00F57FFF /* nus-logo-sq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nus-logo-sq.png"; path = "Images/nus-logo-sq.png"; sourceTree = "<group>"; };
 		6DEA68FC1732BF7E00F57FFF /* feiyue-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "feiyue-logo.png"; path = "Images/feiyue-logo.png"; sourceTree = "<group>"; };
 		6DEA68FD1732BF7E00F57FFF /* easilydo-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "easilydo-icon.png"; path = "Images/easilydo-icon.png"; sourceTree = "<group>"; };
+		6DEA69011732C3F100F57FFF /* icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-57.png"; sourceTree = "<group>"; };
+		6DEA69031732C3F800F57FFF /* icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-114.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +250,8 @@
 		6DD1C59E172B701800683C7C = {
 			isa = PBXGroup;
 			children = (
+				6DEA69031732C3F800F57FFF /* icon-114.png */,
+				6DEA69011732C3F100F57FFF /* icon-57.png */,
 				6DD1C5B0172B701800683C7C /* Yang Shun Portfolio */,
 				6DD1C5A9172B701800683C7C /* Frameworks */,
 				6DD1C5A8172B701800683C7C /* Products */,
@@ -448,6 +454,8 @@
 				6DEA68FE1732BF7E00F57FFF /* nus-logo-sq.png in Resources */,
 				6DEA68FF1732BF7E00F57FFF /* feiyue-logo.png in Resources */,
 				6DEA69001732BF7E00F57FFF /* easilydo-icon.png in Resources */,
+				6DEA69021732C3F200F57FFF /* icon-57.png in Resources */,
+				6DEA69041732C3F800F57FFF /* icon-114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
