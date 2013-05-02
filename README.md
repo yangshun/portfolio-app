@@ -10,7 +10,7 @@ Main Content:
   - Software developer, Computing for Voluntary Welfare Organizations (Feiyue Family Services Centre)
   - Teaching assistant, CS1020E Data Structures and Algorithm I, National University of Singapore.
 - Education
-  - National University of Singapore, Ba Computing (Computer Science).
+  - National University of Singapore, B.Comp Computing (Computer Science).
   - Stanford University, Management Science & Engineering Courses.
 - Interests
   - A physics engine is incorporated where the words can be dragged and thrown around.
