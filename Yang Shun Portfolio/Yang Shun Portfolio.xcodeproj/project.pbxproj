@@ -63,6 +63,17 @@
 		6DEA68D61732859D00F57FFF /* BeerItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA68D41732855200F57FFF /* BeerItemViewController.m */; };
 		6DEA68D7173288A600F57FFF /* TapGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA68C4173283DC00F57FFF /* TapGameViewController.xib */; };
 		6DEA68D917328FBD00F57FFF /* drinkpal-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA68D817328FBD00F57FFF /* drinkpal-logo@2x.png */; };
+		6DEA68E0173291EE00F57FFF /* gametext.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA68DD173291EE00F57FFF /* gametext.png */; };
+		6DEA68E1173291EE00F57FFF /* sodacan.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA68DE173291EE00F57FFF /* sodacan.png */; };
+		6DEA68E2173291EE00F57FFF /* sodacan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA68DF173291EE00F57FFF /* sodacan@2x.png */; };
+		6DEA68E51732922800F57FFF /* wall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA68E31732922800F57FFF /* wall.jpg */; };
+		6DEA68E61732922800F57FFF /* wall@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA68E41732922800F57FFF /* wall@2x.jpg */; };
+		6DEA68E91732925100F57FFF /* hipspot-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA68E71732925100F57FFF /* hipspot-logo.png */; };
+		6DEA68EA1732925100F57FFF /* hipspot-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA68E81732925100F57FFF /* hipspot-logo@2x.png */; };
+		6DEA68EB173292AD00F57FFF /* ShakeCanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA68DC173291C800F57FFF /* ShakeCanViewController.xib */; };
+		6DEA68EC1732931800F57FFF /* ShakeCanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA68DB173291C700F57FFF /* ShakeCanViewController.m */; };
+		6DEA68EF1732938600F57FFF /* endgame.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA68ED1732938600F57FFF /* endgame.png */; };
+		6DEA68F01732938600F57FFF /* gametext.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA68EE1732938600F57FFF /* gametext.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -140,6 +151,18 @@
 		6DEA68D31732855200F57FFF /* BeerItemViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeerItemViewController.h; sourceTree = "<group>"; };
 		6DEA68D41732855200F57FFF /* BeerItemViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeerItemViewController.m; sourceTree = "<group>"; };
 		6DEA68D817328FBD00F57FFF /* drinkpal-logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "drinkpal-logo@2x.png"; path = "Images/drinkpal-logo@2x.png"; sourceTree = "<group>"; };
+		6DEA68DA173291C700F57FFF /* ShakeCanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShakeCanViewController.h; sourceTree = "<group>"; };
+		6DEA68DB173291C700F57FFF /* ShakeCanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShakeCanViewController.m; sourceTree = "<group>"; };
+		6DEA68DC173291C800F57FFF /* ShakeCanViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShakeCanViewController.xib; sourceTree = "<group>"; };
+		6DEA68DD173291EE00F57FFF /* gametext.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gametext.png; path = Images/gametext.png; sourceTree = "<group>"; };
+		6DEA68DE173291EE00F57FFF /* sodacan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sodacan.png; path = Images/sodacan.png; sourceTree = "<group>"; };
+		6DEA68DF173291EE00F57FFF /* sodacan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sodacan@2x.png"; path = "Images/sodacan@2x.png"; sourceTree = "<group>"; };
+		6DEA68E31732922800F57FFF /* wall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wall.jpg; path = Images/wall.jpg; sourceTree = "<group>"; };
+		6DEA68E41732922800F57FFF /* wall@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "wall@2x.jpg"; path = "Images/wall@2x.jpg"; sourceTree = "<group>"; };
+		6DEA68E71732925100F57FFF /* hipspot-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hipspot-logo.png"; path = "Images/hipspot-logo.png"; sourceTree = "<group>"; };
+		6DEA68E81732925100F57FFF /* hipspot-logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hipspot-logo@2x.png"; path = "Images/hipspot-logo@2x.png"; sourceTree = "<group>"; };
+		6DEA68ED1732938600F57FFF /* endgame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = endgame.png; path = Images/endgame.png; sourceTree = "<group>"; };
+		6DEA68EE1732938600F57FFF /* gametext.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gametext.png; path = Images/gametext.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +183,15 @@
 		6D93C326172C68330039F940 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				6DEA68ED1732938600F57FFF /* endgame.png */,
+				6DEA68EE1732938600F57FFF /* gametext.png */,
+				6DEA68E71732925100F57FFF /* hipspot-logo.png */,
+				6DEA68E81732925100F57FFF /* hipspot-logo@2x.png */,
+				6DEA68E31732922800F57FFF /* wall.jpg */,
+				6DEA68E41732922800F57FFF /* wall@2x.jpg */,
+				6DEA68DD173291EE00F57FFF /* gametext.png */,
+				6DEA68DE173291EE00F57FFF /* sodacan.png */,
+				6DEA68DF173291EE00F57FFF /* sodacan@2x.png */,
 				6DEA68D817328FBD00F57FFF /* drinkpal-logo@2x.png */,
 				6DEA68D11732847F00F57FFF /* quit-button@2x.png */,
 				6DEA68CF1732847000F57FFF /* score@2x.png */,
@@ -241,6 +273,9 @@
 				6DEA68C2173283DC00F57FFF /* TapGameViewController.h */,
 				6DEA68C3173283DC00F57FFF /* TapGameViewController.m */,
 				6DEA68C4173283DC00F57FFF /* TapGameViewController.xib */,
+				6DEA68DA173291C700F57FFF /* ShakeCanViewController.h */,
+				6DEA68DB173291C700F57FFF /* ShakeCanViewController.m */,
+				6DEA68DC173291C800F57FFF /* ShakeCanViewController.xib */,
 				6DEA68D31732855200F57FFF /* BeerItemViewController.h */,
 				6DEA68D41732855200F57FFF /* BeerItemViewController.m */,
 				6DD1C5E3172B815900683C7C /* InterestBlock.h */,
@@ -336,6 +371,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DEA68EB173292AD00F57FFF /* ShakeCanViewController.xib in Resources */,
 				6DEA68D7173288A600F57FFF /* TapGameViewController.xib in Resources */,
 				6DD1C5B5172B701800683C7C /* InfoPlist.strings in Resources */,
 				6DD1C5BD172B701800683C7C /* Default.png in Resources */,
@@ -373,6 +409,15 @@
 				6DEA68D01732847000F57FFF /* score@2x.png in Resources */,
 				6DEA68D21732847F00F57FFF /* quit-button@2x.png in Resources */,
 				6DEA68D917328FBD00F57FFF /* drinkpal-logo@2x.png in Resources */,
+				6DEA68E0173291EE00F57FFF /* gametext.png in Resources */,
+				6DEA68E1173291EE00F57FFF /* sodacan.png in Resources */,
+				6DEA68E2173291EE00F57FFF /* sodacan@2x.png in Resources */,
+				6DEA68E51732922800F57FFF /* wall.jpg in Resources */,
+				6DEA68E61732922800F57FFF /* wall@2x.jpg in Resources */,
+				6DEA68E91732925100F57FFF /* hipspot-logo.png in Resources */,
+				6DEA68EA1732925100F57FFF /* hipspot-logo@2x.png in Resources */,
+				6DEA68EF1732938600F57FFF /* endgame.png in Resources */,
+				6DEA68F01732938600F57FFF /* gametext.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +428,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DEA68EC1732931800F57FFF /* ShakeCanViewController.m in Sources */,
 				6DEA68D51732859D00F57FFF /* TapGameViewController.m in Sources */,
 				6DEA68D61732859D00F57FFF /* BeerItemViewController.m in Sources */,
 				6DD1C5DB172B771A00683C7C /* Matrix2D.m in Sources */,

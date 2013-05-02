@@ -50,7 +50,6 @@
 
 - (void)updateTime {
   timeLeft--;
-  NSLog(@"time left: %d", timeLeft);
   timeLabel.text = [NSString stringWithFormat:@"%d", timeLeft];
   if (timeLeft == 0) {
     NSString *msg = [NSString stringWithFormat:@"You gulped %d jugs of beer!", numberOfBeersTapped];
