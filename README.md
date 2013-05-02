@@ -16,4 +16,4 @@ Main Content:
   - A physics engine is incorporated where the words can be dragged and thrown around.
 - Technical Skills
   - List of technical skills.  
-  - Showcasing two award-winning hackathon games that I was part of: DrinkPal and HipSpot.
+  - Showcasing two award-winning hackathon hacks that I was part of: DrinkPal and HipSpot.
