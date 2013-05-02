@@ -319,7 +319,7 @@
   blockRectArray = nil;
   wallRectArray = nil;
   world = nil;
-  [self dismissModalViewControllerAnimated:YES];
+  [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning

@@ -8,6 +8,9 @@
 
 #import "MainViewController.h"
 #import "InterestsViewController.h"
+#import "EducationViewController.h"
+#import "TechnicalViewController.h"
+#import "TapGameViewController.h"
 
 @interface MainViewController () {
   IBOutlet UIButton *job;
@@ -43,7 +46,7 @@
                                 button.center.y + 200);
     [UIView animateWithDuration:0.5f
                           delay:delay*i
-                        options:nil
+                        options:UIViewAnimationOptionCurveEaseIn
                      animations:^{
                        button.center = CGPointMake(button.center.x,
                                                    button.center.y - 250);
@@ -67,8 +70,21 @@
 
 - (IBAction)showInterestsPage:(id)sender {
   InterestsViewController *interestsViewController = [InterestsViewController new];
-  [self presentModalViewController:interestsViewController animated:YES];
+[self.navigationController pushViewController:interestsViewController animated:YES];
 }
+
+
+- (IBAction)showEducationPage:(id)sender {
+  EducationViewController *educationViewController = [EducationViewController new];
+  [self.navigationController pushViewController:educationViewController animated:YES];
+}
+
+
+- (IBAction)showTechnicalPage:(id)sender {
+  TechnicalViewController *technicalViewController = [TechnicalViewController new];
+  [self.navigationController pushViewController:technicalViewController animated:YES];
+}
+
 
 - (void)didReceiveMemoryWarning
 {
