@@ -74,6 +74,13 @@
 		6DEA68EC1732931800F57FFF /* ShakeCanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA68DB173291C700F57FFF /* ShakeCanViewController.m */; };
 		6DEA68EF1732938600F57FFF /* endgame.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA68ED1732938600F57FFF /* endgame.png */; };
 		6DEA68F01732938600F57FFF /* gametext.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA68EE1732938600F57FFF /* gametext.png */; };
+		6DEA68F417329E5200F57FFF /* ProfessionalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA68F217329E5200F57FFF /* ProfessionalViewController.m */; };
+		6DEA68F517329E5200F57FFF /* ProfessionalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA68F317329E5200F57FFF /* ProfessionalViewController.xib */; };
+		6DEA68F71732AEE400F57FFF /* ProfessionalViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA68F61732AEE400F57FFF /* ProfessionalViewCell.xib */; };
+		6DEA68FA1732B0A400F57FFF /* ProfessionalViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA68F91732B0A300F57FFF /* ProfessionalViewCell.m */; };
+		6DEA68FE1732BF7E00F57FFF /* nus-logo-sq.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA68FB1732BF7E00F57FFF /* nus-logo-sq.png */; };
+		6DEA68FF1732BF7E00F57FFF /* feiyue-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA68FC1732BF7E00F57FFF /* feiyue-logo.png */; };
+		6DEA69001732BF7E00F57FFF /* easilydo-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA68FD1732BF7E00F57FFF /* easilydo-icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -163,6 +170,15 @@
 		6DEA68E81732925100F57FFF /* hipspot-logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hipspot-logo@2x.png"; path = "Images/hipspot-logo@2x.png"; sourceTree = "<group>"; };
 		6DEA68ED1732938600F57FFF /* endgame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = endgame.png; path = Images/endgame.png; sourceTree = "<group>"; };
 		6DEA68EE1732938600F57FFF /* gametext.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gametext.png; path = Images/gametext.png; sourceTree = "<group>"; };
+		6DEA68F117329E5100F57FFF /* ProfessionalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfessionalViewController.h; sourceTree = "<group>"; };
+		6DEA68F217329E5200F57FFF /* ProfessionalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfessionalViewController.m; sourceTree = "<group>"; };
+		6DEA68F317329E5200F57FFF /* ProfessionalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfessionalViewController.xib; sourceTree = "<group>"; };
+		6DEA68F61732AEE400F57FFF /* ProfessionalViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfessionalViewCell.xib; sourceTree = "<group>"; };
+		6DEA68F81732B0A200F57FFF /* ProfessionalViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfessionalViewCell.h; sourceTree = "<group>"; };
+		6DEA68F91732B0A300F57FFF /* ProfessionalViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfessionalViewCell.m; sourceTree = "<group>"; };
+		6DEA68FB1732BF7E00F57FFF /* nus-logo-sq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nus-logo-sq.png"; path = "Images/nus-logo-sq.png"; sourceTree = "<group>"; };
+		6DEA68FC1732BF7E00F57FFF /* feiyue-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "feiyue-logo.png"; path = "Images/feiyue-logo.png"; sourceTree = "<group>"; };
+		6DEA68FD1732BF7E00F57FFF /* easilydo-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "easilydo-icon.png"; path = "Images/easilydo-icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +199,9 @@
 		6D93C326172C68330039F940 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				6DEA68FB1732BF7E00F57FFF /* nus-logo-sq.png */,
+				6DEA68FC1732BF7E00F57FFF /* feiyue-logo.png */,
+				6DEA68FD1732BF7E00F57FFF /* easilydo-icon.png */,
 				6DEA68ED1732938600F57FFF /* endgame.png */,
 				6DEA68EE1732938600F57FFF /* gametext.png */,
 				6DEA68E71732925100F57FFF /* hipspot-logo.png */,
@@ -276,6 +295,12 @@
 				6DEA68DA173291C700F57FFF /* ShakeCanViewController.h */,
 				6DEA68DB173291C700F57FFF /* ShakeCanViewController.m */,
 				6DEA68DC173291C800F57FFF /* ShakeCanViewController.xib */,
+				6DEA68F81732B0A200F57FFF /* ProfessionalViewCell.h */,
+				6DEA68F91732B0A300F57FFF /* ProfessionalViewCell.m */,
+				6DEA68F61732AEE400F57FFF /* ProfessionalViewCell.xib */,
+				6DEA68F117329E5100F57FFF /* ProfessionalViewController.h */,
+				6DEA68F217329E5200F57FFF /* ProfessionalViewController.m */,
+				6DEA68F317329E5200F57FFF /* ProfessionalViewController.xib */,
 				6DEA68D31732855200F57FFF /* BeerItemViewController.h */,
 				6DEA68D41732855200F57FFF /* BeerItemViewController.m */,
 				6DD1C5E3172B815900683C7C /* InterestBlock.h */,
@@ -418,6 +443,11 @@
 				6DEA68EA1732925100F57FFF /* hipspot-logo@2x.png in Resources */,
 				6DEA68EF1732938600F57FFF /* endgame.png in Resources */,
 				6DEA68F01732938600F57FFF /* gametext.png in Resources */,
+				6DEA68F517329E5200F57FFF /* ProfessionalViewController.xib in Resources */,
+				6DEA68F71732AEE400F57FFF /* ProfessionalViewCell.xib in Resources */,
+				6DEA68FE1732BF7E00F57FFF /* nus-logo-sq.png in Resources */,
+				6DEA68FF1732BF7E00F57FFF /* feiyue-logo.png in Resources */,
+				6DEA69001732BF7E00F57FFF /* easilydo-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +474,8 @@
 				6D93C332172C6E720039F940 /* EducationViewController.m in Sources */,
 				6D93C345172C808F0039F940 /* MainViewController.m in Sources */,
 				6DEA68C0173280C200F57FFF /* TechnicalViewController.m in Sources */,
+				6DEA68F417329E5200F57FFF /* ProfessionalViewController.m in Sources */,
+				6DEA68FA1732B0A400F57FFF /* ProfessionalViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

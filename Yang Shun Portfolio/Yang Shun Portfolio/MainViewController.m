@@ -10,7 +10,7 @@
 #import "InterestsViewController.h"
 #import "EducationViewController.h"
 #import "TechnicalViewController.h"
-#import "TapGameViewController.h"
+#import "ProfessionalViewController.h"
 
 @interface MainViewController () {
   IBOutlet UIButton *job;
@@ -83,6 +83,11 @@
 - (IBAction)showTechnicalPage:(id)sender {
   TechnicalViewController *technicalViewController = [TechnicalViewController new];
   [self.navigationController pushViewController:technicalViewController animated:YES];
+}
+
+- (IBAction)showProfessionalPage:(id)sender {
+  ProfessionalViewController *professionalViewController = [ProfessionalViewController new];
+  [self.navigationController pushViewController:professionalViewController animated:YES];
 }
 
 

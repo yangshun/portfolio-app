@@ -1,9 +1,9 @@
 //
+//  Matrix2D.m
+//  Yang Shun Portfolio
 //
-//  NUS CS3217 2012 
-//  Problem Set 4
-//  The Physics Engine
-//
+//  Created by Yang Shun Tay on 4/26/13.
+//  Copyright (c) 2013 Yang Shun Tay. All rights reserved.
 //
 
 #import "Matrix2D.h"
